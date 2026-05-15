@@ -135,8 +135,8 @@ body{font-family:var(--fb);background:var(--cream);color:var(--dark);line-height
 .rst-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:transform .2s}
 .rst-card:hover{transform:translateY(-4px)}
 .rst-img{height:175px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
-.rst-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.rst-img .em{font-size:4.5rem;position:relative;z-index:1;filter:drop-shadow(0 2px 10px rgba(0,0,0,.3))}
+.rst-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.rst-img .em{font-size:4.5rem;position:relative;z-index:0;filter:drop-shadow(0 2px 10px rgba(0,0,0,.3))}
 .rst-city-badge{position:absolute;top:.6rem;left:.6rem;background:var(--red);color:#fff;font-size:.7rem;padding:.2rem .6rem;border-radius:10px;z-index:2}
 .rst-body{padding:1.1rem 1.3rem}
 .rst-name{font-family:var(--fs);font-size:1.05rem;font-weight:700;margin-bottom:.2rem}
@@ -233,9 +233,9 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-badge">✈ 2026年12月18日 — 12月28日</div>
+    <div class="hero-badge">✈ 桃園 TPE → 廣島 HIJ ｜ 福岡 FUK → 桃園 TPE</div>
     <h1>廣島・山口・島根<br><em>西日本深度旅遊</em></h1>
-    <p>浮世鳥居・百鳥居神社・古戰場傳奇・神話之國出雲<br>11天10夜 帶你走遍日本西部最美的風景</p>
+    <p>2026年12月18日 — 12月28日 ｜ 11天10夜<br>浮世鳥居・百鳥居神社・古戰場傳奇・神話之國出雲</p>
     <div class="hero-stats">
       <div class="hstat"><span class="num">11</span><span class="lbl">天數</span></div>
       <div class="hstat"><span class="num">13</span><span class="lbl">個景點</span></div>
@@ -292,34 +292,40 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
       <div class="day-num">1</div>
       <div class="day-inf">
         <div class="day-dt">12月18日（星期四）</div>
-        <div class="day-ttl">✈ 抵達廣島・開啟旅程</div>
+        <div class="day-ttl">✈ 桃園出發 → 抵達廣島・開啟旅程</div>
         <div class="tags">
-          <span class="tag tg-b">廣島市</span>
+          <span class="tag tg-p">桃園 TPE 出發</span>
+          <span class="tag tg-b">廣島 HIJ 降落</span>
           <span class="tag tg-g">入住 ANA Crowne Plaza</span>
-          <span class="tag tg-y">本通商店街</span>
         </div>
       </div>
       <i class="fas fa-chevron-down day-tog"></i>
     </div>
     <div class="day-body">
+      <div style="background:#FEF3C7;border-radius:8px;padding:.9rem 1.1rem;margin-bottom:1rem;font-size:.85rem;border-left:4px solid #D97706">
+        ✈️ <strong>航班資訊：</strong>桃園國際機場（TPE）→ 廣島空港（HIJ）直飛約2.5–3小時。推薦航空：中華航空 CI・長榮航空 BR（需確認當季班表），或經由福岡（FUK）轉乘山陽新幹線抵達廣島。<strong>回程：</strong>福岡空港（FUK）→ 桃園（TPE）直飛，詳見第11天。
+      </div>
       <div class="tb-btns">
         <button class="tb-btn a-drive" onclick="switchTab('d1','drive')"><i class="fas fa-car"></i>自駕方案</button>
         <button class="tb-btn" onclick="switchTab('d1','transit')"><i class="fas fa-train"></i>大眾運輸</button>
       </div>
       <div class="tb-pane active" id="d1-drive">
         <ul class="sched">
-          <li class="si"><span class="st">抵達</span><div class="sc"><div class="sn">廣島空港 / 廣島站</div><div class="sd">廣島空港可租自駕車（推薦 Toyota Rent a Car 或 Times Car Rental），車費約 ¥10,000/天含保險。若新幹線抵達廣島站，可在站內租車。</div><div class="sp">費用：租車 ¥10,000/天起</div><div class="spk">停車：ANA Crowne Plaza 酒店停車場 ¥1,500/晚</div></div></li>
-          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">入住 ANA Crowne Plaza Hotel Hiroshima</div><div class="sd">廣島市中心最佳選擇之一，步行可達和平紀念公園、本通商店街。訂房時選「Superior Room」，空間寬敞舒適。</div><div class="spk">停車：酒店地下停車場，¥1,500/晚（需預約）</div></div></li>
-          <li class="si"><span class="st">17:30</span><div class="sc"><div class="sn">本通商店街 (本通り商店街)</div><div class="sd">廣島最熱鬧的步行購物街，全長約600m，集結流行服飾、日用品、伴手禮與餐廳。漫步感受廣島市區氣息，尋找皮克敏周邊商品！</div><div class="sp">費用：購物自由</div></div></li>
-          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：麗ちゃん お好み焼き（廣島燒）</div><div class="sd">廣島お好み村5樓，超人氣名店「麗ちゃん」。廣島燒最大特色是鋪入大量麵條與高麗菜，口感層次豐富，跟關西燒法截然不同。眼前鐵板現做，香氣逼人。</div><div class="sp">費用：每人 ¥1,200–1,500（約 TWD 270–340）</div></div></li>
+          <li class="si"><span class="st">07:00</span><div class="sc"><div class="sn">桃園國際機場（TPE）出發</div><div class="sd">建議提前2.5小時到機場辦理登機手續。中華航空/長榮航空 TPE→HIJ 約07:00–10:30班次（請以實際班表為準）。行李托運時注意：伴手禮・玩具可放託運，不超過20kg。</div><div class="sp">費用：機票約 TWD 8,000–15,000/人（含稅，早訂較優惠）</div></div></li>
+          <li class="si"><span class="st">10:30</span><div class="sc"><div class="sn">廣島空港（HIJ）抵達 → 租車</div><div class="sd">廣島空港出入境後，前往1樓「レンタカーカウンター」辦理租車。推薦 Toyota Rent a Car（全日最整齊）或 Times Car Rental（網路預訂方便）。建議提前在台灣官網預訂，國際駕照（IDP）需於台灣監理站事先辦理（費用¥250）。</div><div class="sp">費用：租車 ¥10,000–12,000/天（含基本保險）；ETC卡另加¥1,100/日</div><div class="spk">停車：廣島空港出發直接上道，返回廣島市入住</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">廣島空港 → 廣島市（約45分）</div><div class="sd">從廣島空港走「山陽道」進入廣島市，或走一般道路（国道2号）。抵達廣島市約13:00。</div><div class="sp">費用：高速公路¥900</div><div class="spk">停車：ANA Crowne Plaza 酒店地下停車場 ¥1,500/晚（建議事先預約）</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">入住 ANA Crowne Plaza Hotel Hiroshima</div><div class="sd">廣島市中心核心位置，步行可達和平記念公園、本通商店街。Check-in後稍作休息，準備探索廣島。</div></div></li>
+          <li class="si"><span class="st">15:00</span><div class="sc"><div class="sn">本通商店街 初探廣島</div><div class="sd">廣島最熱鬧的步行購物街，全長約600m。逛逛アニメイト廣島打頭陣，尋找吉伊卡哇商品，感受廣島市區的生活氣息！</div><div class="sp">費用：購物自由</div></div></li>
+          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：麗ちゃん お好み焼き（廣島燒）</div><div class="sd">廣島お好み焼き村5樓名店，廣島燒特色是層層堆疊食材＋麵條，眼前鐵板現做香氣逼人，是抵達第一天最完美的歡迎晚餐。</div><div class="sp">費用：每人 ¥1,200–1,500（約 TWD 270–340）</div></div></li>
         </ul>
       </div>
       <div class="tb-pane" id="d1-transit">
         <ul class="sched">
-          <li class="si"><span class="st">抵達</span><div class="sc"><div class="sn">廣島站（新幹線）</div><div class="sd">從大阪乘「のぞみ」約1.5小時，¥9,870/人；從東京約4小時，¥18,380/人。購買 ICOCA 交通卡於廣島站自動販賣機。</div><div class="sp">費用：大阪出發 ¥9,870/人</div></div></li>
-          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">前往酒店：廣島站→ANA Crowne Plaza</div><div class="sd">廣島站步行約15分，或搭路面電車1號線「紙屋町西」方向，「紙屋町西」站下車，步行5分。¥200。</div><div class="sp">費用：路面電車 ¥200 或步行</div></div></li>
-          <li class="si"><span class="st">17:30</span><div class="sc"><div class="sn">本通商店街</div><div class="sd">從酒店步行約5–10分即達。沿途欣賞廣島市區街道風景，路面電車叮叮作響充滿昭和感。</div></div></li>
-          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：麗ちゃん（廣島お好み村）</div><div class="sd">本通商店街步行約5分。廣島お好み村是一棟專門食廣島燒的建築，每層都是不同店家，麗ちゃん最多人排隊。</div><div class="sp">費用：每人 ¥1,200–1,500</div></div></li>
+          <li class="si"><span class="st">07:00</span><div class="sc"><div class="sn">桃園國際機場（TPE）出發</div><div class="sd">搭乘中華航空/長榮航空 TPE→HIJ（廣島空港）直飛，約2.5–3小時。或搭 TPE→FUK（福岡），再從博多站搭山陽新幹線至廣島（約45分，¥3,760）。</div><div class="sp">費用：機票 TWD 8,000–15,000/人</div></div></li>
+          <li class="si"><span class="st">10:30</span><div class="sc"><div class="sn">廣島空港 → 廣島站（機場巴士）</div><div class="sd">廣島空港1樓出口搭乘「広島バス」機場利木津巴士，約45分抵達廣島站，途中停靠紙屋町（酒店附近）。班次密集，約30分一班。</div><div class="sp">費用：¥1,340/人（約 TWD 295）</div></div></li>
+          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">廣島站 → ANA Crowne Plaza（路面電車）</div><div class="sd">廣島站前搭路面電車1・2號線「紙屋町西」方向，在「紙屋町西」站下車，步行5分即達。ICOCA刷卡¥200。</div><div class="sp">費用：路面電車 ¥200</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">入住酒店、休息、下午逛本通商店街</div><div class="sd">同自駕方案行程。建議在廣島站或機場購入ICOCA交通卡（¥2,000，含¥500押金），全程刷卡搭乘路面電車・JR更方便。</div></div></li>
+          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：麗ちゃん（廣島お好み村）</div><div class="sd">步行或路面電車即達，廣島燒的完美初體驗。</div><div class="sp">費用：每人 ¥1,200–1,500</div></div></li>
         </ul>
       </div>
     </div>
@@ -434,23 +440,31 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
       </div>
       <div class="tb-pane active" id="d4-drive">
         <ul class="sched">
-          <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">唐戸市場 週末朝市</div><div class="sd">週六日限定的「活きいき馬関街」朝市！市場外廣場擺滿新鮮海產攤位，有河豚壽司、海膽軍艦、生蠔一顆¥200起，邊逛邊吃是下關最在地的體驗！</div><div class="sp">費用：每人 ¥1,000–2,000 吃到盡興</div><div class="spk">停車：唐戸市場 隣接駐車場 ¥300/時、或周邊路邊停車場</div></div></li>
-          <li class="si"><span class="st">10:00</span><div class="sc"><div class="sn">關門海底人行隧道（下關側入口）</div><div class="sd">全長780公尺，步行穿越關門海峽海底，連接山口縣（本州）和福岡縣（九州）！人行隧道完全免費，建議穿防寒外套因隧道內較冷。走到中間有縣界標示，可以拍攝「一腳踩兩縣」紀念照！單趟約15分鐘。</div><div class="sp">費用：步行免費（自行車¥20）</div><div class="spk">停車：下關側 みもすそ川公園 免費停車場（約50台）</div></div></li>
-          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">關門フェリー → 門司港 (門司港レトロ)</div><div class="sd">走回下關側後，搭關門渡輪（5分鐘）前往門司港，更快更方便。或把車停在下關，步行+渡輪往返。門司港レトロ地区為明治–大正時代的紅磚建築街區，昔日是日本重要的國際貿易港口。</div><div class="sp">費用：渡輪 ¥400/人（來回¥800）</div><div class="spk">停車：車停下關，步行搭渡輪到門司港（省停車費）</div></div></li>
-          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">午餐：焼きカレー（門司港名物）</div><div class="sd">門司港最著名的美食！將咖哩飯放入烤箱焗烤至表面金黃焦香，搭配起司和半熟蛋，濃郁鮮美。門司港レトロ地区內有多家店鋪，推薦「伽哩本舗」或「BEAR FRUITS」。</div><div class="sp">費用：每人 ¥1,200–1,600（約 TWD 270–355）</div></div></li>
-          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">門司港レトロ地区 散步</div><div class="sd">參觀舊門司税関（明治時代海關建築）、門司港レトロ展望室（31樓免費展望台）、旧大阪商船ビル（橙色磚塔）、九州鐵道紀念館（¥300）。香蕉批發商也是門司港特色，可以購買香蕉相關商品。</div><div class="sp">費用：散步免費，各館¥0–400</div></div></li>
-          <li class="si"><span class="st">15:30</span><div class="sc"><div class="sn">搭渡輪返回下關 → 海響館</div><div class="sd">返回下關後，直接驅車前往海響館。</div></div></li>
-          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">海響館 (Kaikyokan / 下關市立しものせき水族館)</div><div class="sd">世界最大的河豚展覽館！館內收藏超過100種以上的河豚魚，並有關門海峽特有的魚種展示。企鵝館有黑腳企鵝和帝企鵝，海豚秀和海豹秀每日定時表演。可觸摸的生物池讓大人小孩都開心。</div><div class="sp">費用：成人 ¥2,090/人（約 TWD 460）</div><div class="spk">停車：海響館 駐車場 ¥300/時，最高 ¥1,500/日</div></div></li>
-          <li class="si"><span class="st">18:30</span><div class="sc"><div class="sn">晚餐：唐戸市場周邊海鮮居酒屋</div><div class="sd">推薦「ふく一」或唐戸市場旁的居酒屋，點盤河豚唐揚げ（炸河豚）配日本酒，輕鬆暢飲。也可在超市採購食材，享受在地生活感。</div><div class="sp">費用：每人 ¥2,000–3,500</div></div></li>
+          <li class="si"><span class="st">07:30</span><div class="sc"><div class="sn">唐戸市場 週末朝市（早起限定！）</div><div class="sd">週六日限定「活きいき馬関街」朝市，07:30–13:00。市場外廣場擺滿新鮮海產攤位：河豚壽司¥300/貫、生海膽軍艦¥400、生蠔1顆¥200起！邊逛邊吃是下關最在地的早晨體驗，強烈建議早到。</div><div class="sp">費用：每人 ¥1,000–2,500 吃到盡興</div><div class="spk">停車：唐戸市場 隣接駐車場 ¥300/時（朝市時間人多，建議07:30前到）</div></div></li>
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">關門海底人行隧道（下關側入口）</div><div class="sd">全長780公尺，步行穿越關門海峽海底，連接山口縣（本州）和福岡縣（九州）！隧道內涼爽舒適，走到中間有縣界標示，可以拍攝「一腳踩兩縣」紀念照！單趟約15分鐘。</div><div class="sp">費用：步行完全免費</div><div class="spk">停車：みもすそ川公園 免費停車場（約50台）步行3分到入口</div></div></li>
+          <li class="si"><span class="st">10:30</span><div class="sc"><div class="sn">關門フェリー → 門司港レトロ</div><div class="sd">搭關門渡輪（5分鐘，¥400）前往九州福岡縣門司港。明治–大正時代紅磚建築街區，充滿異國情調。</div><div class="sp">費用：渡輪 ¥400/人（來回¥800）</div><div class="spk">停車：車停下關みもすそ川公園（免費），搭渡輪往返</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">午餐：焼きカレー（門司港名物）</div><div class="sd">門司港名物「焼きカレー」！將咖哩飯放入烤箱焗烤至表面金黃，搭配起司和半熟蛋，入口濃郁獨特。推薦「伽哩本舗」（1960年代創業的元祖店）或「BEAR FRUITS」。11點開始，排隊較少。</div><div class="sp">費用：每人 ¥1,200–1,600</div></div></li>
+          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">門司港レトロ地区 散策</div><div class="sd">參觀重要文化財「門司港駅」（1914年建，新羅曼斯克樣式）、舊門司税関（海關大樓）、旧大阪商船ビル（橙色磚塔）。門司港レトロ展望室（31F，免費）可俯瞰關門海峽全景。限定紀念品「バナナカスタード」必買！</div><div class="sp">費用：散步免費，各設施¥0–400</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">渡輪返回下關 → 驅車至海響館</div><div class="sd">渡輪回到下關唐戸後，取車，約10分鐘車程抵達海響館。今天下午到傍晚把整個下午都留給海響館！</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">🐡 海響館 半日深度遊 START（4小時）</div><div class="sd"><strong>世界最大河豚（ふぐ）展覽館！</strong>建議依以下路線遊覽：①入口大水槽→②河豚專門コーナー（100種以上！）→③関門海峡の魚類展示→④企鵝館→⑤ペンギンショー（15:00頃）→⑥海獺・海豹エリア→⑦イルカショー（16:00頃）→⑧觸摸水池（タッチプール，可摸魟魚・海星！）→⑨海の大水槽トンネル通路→⑩館內カフェ休息→⑪紀念品商店。冬季企鵝比較活潑，動態十足，別錯過企鵝餵食時間！</div><div class="sp">費用：成人 ¥2,090/人（約 TWD 460）｜¥2,090×2=¥4,180</div><div class="spk">停車：海響館 駐車場 ¥300/時，4小時最高¥1,500；或向館內詢問停車優惠</div></div></li>
+          <li class="si"><span class="st">14:30</span><div class="sc"><div class="sn">河豚（ふぐ）専門展示ゾーン</div><div class="sd">全球唯一的河豚専門コーナー：虎河豚（ふぐ）・クサフグ・ヒガンフグ等100種以上同堂！展示介紹各種河豚的毒性・特性，還有可愛的小河豚苗展示缸。日本料理可以吃的種類一目瞭然。</div></div></li>
+          <li class="si"><span class="st">15:00</span><div class="sc"><div class="sn">🐧 ペンギンショー & 企鵝館</div><div class="sd">黒腳企鵝（ケープペンギン）和國王企鵝（キングペンギン）的互動表演秀，每日15:00固定場次（請現場確認時間表）。12月冬日企鵝特別精神飽滿！餵食體驗時間企鵝會從腳邊跑過，超級可愛。</div></div></li>
+          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">🐬 イルカ・アシカショー（海豚・海獺秀）</div><div class="sd">每日16:00定時表演（請現場確認），海豚跳躍・海豹倒立・海獺投球等精彩表演，觀眾席位置特殊，表演者離你很近！是整個水族館的高潮場次，強烈建議留到這個時間。</div></div></li>
+          <li class="si"><span class="st">16:30</span><div class="sc"><div class="sn">タッチプール + 館内大水槽通路</div><div class="sd">觸摸池可以親手碰觸：魟魚・海星・小鯊魚等，工作人員在旁解說，安全有趣。大水槽步行通路讓魚群游過頭頂，感受海底漫步的奇妙感受。</div></div></li>
+          <li class="si"><span class="st">17:30</span><div class="sc"><div class="sn">館內カフェ・紀念品商店</div><div class="sd">館內Café販售河豚造型甜點・海響館限定商品（河豚玩偶、海響館毛巾等），這裡的河豚玩偶是下關限定！</div><div class="sp">費用：紀念品¥500–3,000</div></div></li>
+          <li class="si"><span class="st">18:00</span><div class="sc"><div class="sn">結束海響館 → 返回飯店</div><div class="sd">充實的海響館半日遊結束！海響館閉館時間17:30（入館至17:00），請注意最後入場時間。</div></div></li>
+          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：ふく一（下關海鮮居酒屋）</div><div class="sd">唐戸市場旁的海鮮居酒屋，炸河豚（ふぐの唐揚げ）外酥內嫩，搭配山口縣地酒「獺祭（だっさい）」，完美收尾。</div><div class="sp">費用：每人 ¥2,500–4,000</div></div></li>
         </ul>
       </div>
       <div class="tb-pane" id="d4-transit">
         <ul class="sched">
-          <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">唐戸市場（步行或巴士）</div><div class="sd">從下關站搭サンデン交通巴士至唐戸，約15分，¥230。週末朝市體驗同自駕行程。</div><div class="sp">費用：巴士 ¥230</div></div></li>
-          <li class="si"><span class="st">10:00</span><div class="sc"><div class="sn">關門海底人行隧道（步行！）</div><div class="sd">從唐戸市場步行至みもすそ川公園入口（下關側）約15分。穿越隧道到門司港側，再搭關門渡輪回下關（¥400），形成循環路線。</div><div class="sp">費用：隧道免費，渡輪¥400</div></div></li>
-          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">関門フェリー → 門司港</div><div class="sd">從下關唐戸渡輪乗り場搭渡輪，5分抵達門司港。班次密集，約20分一班。</div><div class="sp">費用：¥400/人</div></div></li>
-          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">門司港午餐・散步（同上行程）</div><div class="sd">門司港レトロ地区步行遊覽，所有景點集中，無需另搭車。</div></div></li>
-          <li class="si"><span class="st">15:30</span><div class="sc"><div class="sn">渡輪返回下關→海響館（巴士）</div><div class="sd">唐戸渡輪口搭巴士至「海響館前」，約10分，¥230。</div><div class="sp">費用：巴士 ¥230</div></div></li>
+          <li class="si"><span class="st">07:30</span><div class="sc"><div class="sn">唐戸市場 週末朝市（巴士 or 步行）</div><div class="sd">下關站搭サンデン交通巴士至「唐戸」站，約15分，¥230。若住宿在唐戸附近步行即達。週末朝市体験同自駕行程。</div><div class="sp">費用：巴士 ¥230</div></div></li>
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">關門海底人行隧道（步行）</div><div class="sd">從唐戸市場步行至みもすそ川公園入口約15分。穿越隧道後在門司港側登岸，再搭関門渡輪回下關（¥400），形成完整循環路線。</div><div class="sp">費用：隧道免費，渡輪¥400</div></div></li>
+          <li class="si"><span class="st">10:30</span><div class="sc"><div class="sn">関門フェリー → 門司港（大眾運輸）</div><div class="sd">下關唐戸渡輪乘り場搭渡輪，5分抵達門司港。班次密集約20分一班。門司港JR站可搭JR鹿児島本線返回下關。</div><div class="sp">費用：渡輪¥400</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">門司港 焼きカレー・レトロ散策</div><div class="sd">同自駕方案，所有景點步行可達。</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">渡輪 or JR 返回下關 → 海響館（巴士）</div><div class="sd">從門司港搭渡輪回下關唐戸（¥400），再步行約20分或搭サンデン交通巴士（¥230）至「海響館前」站。</div><div class="sp">費用：渡輪¥400 + 巴士¥230</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">🐡 海響館 半日深度遊（大眾運輸）</div><div class="sd">與自駕方案完全相同的海響館4小時行程：河豚展示→企鵝秀→海豚秀→觸摸池→大水槽通路→館內咖啡廳→紀念品店。請保留充裕時間！</div><div class="sp">費用：成人 ¥2,090/人</div></div></li>
+          <li class="si"><span class="st">18:30</span><div class="sc"><div class="sn">返回下關站・晚餐</div><div class="sd">從海響館前搭巴士返回下關市區（¥230）。晚餐在唐戸市場或下關站周邊海鮮居酒屋享用。</div><div class="sp">費用：巴士¥230</div></div></li>
         </ul>
       </div>
     </div>
@@ -672,17 +686,38 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
       <div class="day-num">11</div>
       <div class="day-inf">
         <div class="day-dt">12月28日（星期日）</div>
-        <div class="day-ttl">✈ 返程・旅行圓滿結束</div>
-        <div class="tags"><span class="tag tg-y">回程日</span></div>
+        <div class="day-ttl">✈ 廣島 → 博多 → 福岡空港 → 回桃園！</div>
+        <div class="tags"><span class="tag tg-b">廣島出發</span><span class="tag tg-p">新幹線博多</span><span class="tag tg-r">FUK→TPE</span></div>
       </div>
       <i class="fas fa-chevron-down day-tog"></i>
     </div>
     <div class="day-body">
-      <ul class="sched">
-        <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">酒店 Check-out</div><div class="sd">辦理退房，寄存行李若班機較晚。</div></div></li>
-        <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">廣島站 → 廣島空港 or 繼續新幹線</div><div class="sd">廣島空港：從廣島站搭機場巴士約45分，¥1,340。新幹線：若從廣島站繼續搭回日本各地。年底機票請提早訂，12月28日為年末旺季。</div><div class="sp">費用：機場巴士¥1,340 or 新幹線各地</div></div></li>
-        <li class="si"><span class="st">回憶</span><div class="sc"><div class="sn">帶著滿滿收穫踏上歸程 🎌</div><div class="sd">11天走遍廣島・下關・門司港・角島・出雲・松江，既看了世界遺產，也逛了神話聖地，還找到皮克敏和吉伊卡哇的寶物，這趟西日本之旅圓滿充實！</div></div></li>
-      </ul>
+      <div style="background:#EFF6FF;border-radius:8px;padding:.9rem 1.1rem;margin-bottom:1rem;font-size:.85rem;border-left:4px solid #2563EB">
+        ✈️ <strong>回程路線：</strong>廣島站 → 新幹線（45分）→ 博多駅 → 地下鐵（6分）→ 福岡空港（FUK）→ 直飛桃園（TPE）約2.5–3小時。從廣島出發到登機只需約2–2.5小時，非常方便！
+      </div>
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d11','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d11','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d11-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">07:30</span><div class="sc"><div class="sn">廣島 Check-out → 還車</div><div class="sd">辦理退房，前往廣島市內指定還車點（Toyota Rent a Car広島駅前店或廣島空港店）歸還自駕車。還車前務必加滿油（車站附近有ENEOS加油站）。</div><div class="sp">費用：加油約¥2,000–3,000（最後一次）</div></div></li>
+          <li class="si"><span class="st">08:30</span><div class="sc"><div class="sn">廣島站 → 博多（新幹線 のぞみ）</div><div class="sd">廣島站搭のぞみ新幹線至博多，全程僅約45分鐘！班次密集，每15–20分一班。年末12月28日建議提前購票（みどりの窓口或官網）。</div><div class="sp">費用：¥6,680/人（自由席），建議購指定席¥7,000</div></div></li>
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">博多駅 → 福岡空港（地下鐵）</div><div class="sd">博多站B番出口直連「博多」地下鐵站，搭福岡市地下鐵空港線「福岡空港」方向，僅2站6分鐘！¥260。福岡空港是日本最便利的機場之一，市區到機場全球最快。</div><div class="sp">費用：地下鐵 ¥260/人</div></div></li>
+          <li class="si"><span class="st">09:45</span><div class="sc"><div class="sn">福岡空港（FUK）Check-in & 出境</div><div class="sd">國際線出境手續約需1–1.5小時。推薦福岡空港免稅店：博多名物「通りもん」（白豆餡點心）、明太子土產、博多拉麵伴手禮。最後一波掃貨機會！</div></div></li>
+          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">✈ 福岡（FUK）→ 桃園（TPE）起飛</div><div class="sd">中華航空/長榮航空/台灣虎航 FUK→TPE 直飛，飛行約2.5小時，約當地14:30抵達桃園。班機時間以購票時為準，12月28日是年末旺季請盡早訂票！</div><div class="sp">費用：含稅回程票（已含在去程購買）</div></div></li>
+          <li class="si"><span class="st">14:30</span><div class="sc"><div class="sn">桃園國際機場（TPE）抵達 🎌 旅行圓滿！</div><div class="sd">帶著滿滿收穫歸來：嚴島神社的鳥居・出雲大社的結緣御守・松江城的記憶・角島的翡翠海色，還有皮克敏和吉伊卡哇的戰利品！</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d11-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">07:30</span><div class="sc"><div class="sn">廣島 Check-out</div><div class="sd">退房，行李請整理妥當。廣島站前可寄放行李至コインロッカー（若還有時間逛的話），或直接帶著前往車站。</div></div></li>
+          <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">廣島站 → 博多（新幹線）</div><div class="sd">廣島站1F新幹線乘り場，搭のぞみ（約45分）或ひかり（約1小時）至博多。ICOCA不能搭新幹線，需另購票（窗口或自動售票機）。</div><div class="sp">費用：¥6,680–7,000/人（含指定席）</div></div></li>
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">博多 → 福岡空港（地下鐵）</div><div class="sd">博多站地下直連，搭地下鐵空港線，6分鐘直達福岡空港，¥260。完全無縫換乘，是全日本最順暢的機場路線！</div><div class="sp">費用：¥260/人</div></div></li>
+          <li class="si"><span class="st">09:15</span><div class="sc"><div class="sn">福岡空港 免稅購物 + 出境</div><div class="sd">提前1.5–2小時到機場，充裕時間逛免稅商店：博多明太子（ふくや）・博多通りもん・九州限定零食，作為旅行最後的伴手禮補充。</div><div class="sp">費用：購物自由</div></div></li>
+          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">✈ FUK → TPE 直飛返台</div><div class="sd">飛行約2.5小時，約14:30抵達桃園。11天西日本深度旅遊完美畫下句點！</div></div></li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -1035,6 +1070,12 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
   <div class="htl-grid">
 
     <div class="htl-card">
+      <div style="height:160px;overflow:hidden;position:relative">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Hiroshima_Peace_Memorial_Museum_and_Cenotaph.jpg/1280px-Hiroshima_Peace_Memorial_Museum_and_Cenotaph.jpg" style="width:100%;height:100%;object-fit:cover" alt="廣島" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2E86AB)'">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
+          <span style="color:#fff;font-size:.85rem;font-weight:600">📍 廣島市中心 ｜ 步行10分和平紀念公園</span>
+        </div>
+      </div>
       <div class="htl-hdr">
         <div class="htl-stay">🏙️ 廣島 第一段 Night 1–2（12/18–20）</div>
         <div class="htl-name">ANA Crowne Plaza Hotel Hiroshima</div>
@@ -1057,6 +1098,12 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     </div>
 
     <div class="htl-card">
+      <div style="height:160px;overflow:hidden;position:relative">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kanmonkyo_bridge.jpg/1280px-Kanmonkyo_bridge.jpg" style="width:100%;height:100%;object-fit:cover" alt="關門橋" onerror="this.parentElement.style.background='linear-gradient(135deg,#154360,#2E86AB)'">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
+          <span style="color:#fff;font-size:.85rem;font-weight:600">📍 下關市中心 ｜ 關門海峽景觀</span>
+        </div>
+      </div>
       <div class="htl-hdr">
         <div class="htl-stay">🌊 下關 Night 3–4（12/20–22）</div>
         <div class="htl-name">Kaikyo View Shimonoseki</div>
@@ -1078,6 +1125,12 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     </div>
 
     <div class="htl-card">
+      <div style="height:160px;overflow:hidden;position:relative">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Matsue_Castle_2010.jpg/1280px-Matsue_Castle_2010.jpg" style="width:100%;height:100%;object-fit:cover" alt="松江城" onerror="this.parentElement.style.background='linear-gradient(135deg,#2d3436,#636e72)'">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
+          <span style="color:#fff;font-size:.85rem;font-weight:600">📍 松江市中心 ｜ 步行10分松江城</span>
+        </div>
+      </div>
       <div class="htl-hdr">
         <div class="htl-stay">🏯 松江 Night 5–7（12/22–25）</div>
         <div class="htl-name">Matsue Excel Hotel Tokyu</div>
@@ -1099,6 +1152,12 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     </div>
 
     <div class="htl-card">
+      <div style="height:160px;overflow:hidden;position:relative">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hiroshima_castle_1.jpg/1280px-Hiroshima_castle_1.jpg" style="width:100%;height:100%;object-fit:cover" alt="廣島城" onerror="this.parentElement.style.background='linear-gradient(135deg,#8B0000,#C41230)'">
+        <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
+          <span style="color:#fff;font-size:.85rem;font-weight:600">📍 廣島市中心 ｜ 購物・平和公園最方便</span>
+        </div>
+      </div>
       <div class="htl-hdr">
         <div class="htl-stay">🏙️ 廣島 第二段 Night 8–10（12/25–28）</div>
         <div class="htl-name">ANA Crowne Plaza Hotel Hiroshima</div>
@@ -1135,7 +1194,8 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#8B3A3A,#D4691E)">
         <span class="rst-city-badge">廣島</span>
-        <span class="em">🥞</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hiroshima-style_okonomiyaki.jpg/640px-Hiroshima-style_okonomiyaki.jpg" alt="廣島燒" onerror="this.style.display='none'">
+        <span class="em" id="em-okono">🥞</span>
       </div>
       <div class="rst-body">
         <div class="rst-name">麗ちゃん（廣島お好み村）</div>
@@ -1152,6 +1212,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#1a5276,#2e86ab)">
         <span class="rst-city-badge">宮島</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Oyster_on_the_half_shell.jpg/640px-Oyster_on_the_half_shell.jpg" alt="牡蠣" onerror="this.style.display='none'">
         <span class="em">🦪</span>
       </div>
       <div class="rst-body">
@@ -1170,6 +1231,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#154360,#1f618d)">
         <span class="rst-city-badge">下關</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fugu_sashimi.jpg/640px-Fugu_sashimi.jpg" alt="河豚刺身" onerror="this.style.display='none'">
         <span class="em">🐡</span>
       </div>
       <div class="rst-body">
@@ -1187,6 +1249,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#784212,#d68910)">
         <span class="rst-city-badge">下關</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karato_Ichiba_in_Shimonoseki.jpg/640px-Karato_Ichiba_in_Shimonoseki.jpg" alt="唐戸市場" onerror="this.style.display='none'">
         <span class="em">🐟</span>
       </div>
       <div class="rst-body">
@@ -1204,6 +1267,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#7b4f12,#c97d2f)">
         <span class="rst-city-badge">門司港</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mojiko-Station-2013.jpg/640px-Mojiko-Station-2013.jpg" alt="門司港" onerror="this.style.display='none'">
         <span class="em">🍛</span>
       </div>
       <div class="rst-body">
@@ -1221,6 +1285,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#2d6a4f,#52b788)">
         <span class="rst-city-badge">出雲</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Izumo_Soba.jpg/640px-Izumo_Soba.jpg" alt="出雲蕎麥麵" onerror="this.style.display='none'">
         <span class="em">🍜</span>
       </div>
       <div class="rst-body">
@@ -1474,12 +1539,16 @@ function toggleDay(id){
   el.classList.toggle('open');
 }
 function switchTab(day,mode){
-  const body=document.getElementById(day).querySelector('.day-body');
+  const pane=document.getElementById(day+'-'+mode);
+  if(!pane) return;
+  const body=pane.closest('.day-body');
+  if(!body) return;
   body.querySelectorAll('.tb-pane').forEach(p=>p.classList.remove('active'));
   body.querySelectorAll('.tb-btn').forEach(b=>{b.classList.remove('a-drive','a-transit')});
-  document.getElementById(day+'-'+mode).classList.add('active');
-  const btn=body.querySelectorAll('.tb-btn')[mode==='drive'?0:1];
-  btn.classList.add(mode==='drive'?'a-drive':'a-transit');
+  pane.classList.add('active');
+  const btns=body.querySelectorAll('.tb-btn');
+  const idx=mode==='drive'?0:1;
+  if(btns[idx]) btns[idx].classList.add(mode==='drive'?'a-drive':'a-transit');
 }
 // Intersection Observer for reveal animations
 const observer=new IntersectionObserver(entries=>{
