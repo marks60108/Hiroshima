@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>廣島・山口・島根 深度旅遊 2026.12.18–28</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--red:#C41230;--red-dark:#8B0000;--gold:#D4A017;--gold-light:#F5D76E;--cream:#FAF6F0;--cream2:#F0E8DC;--dark:#1A1A2E;--navy:#16213E;--blue:#2E86AB;--blue-light:#EFF6FF;--green:#4CAF50;--green-dark:#2E7D32;--pink:#FF8FAB;--pink-dark:#C2185B;--white:#fff;--gray:#6B7280;--shadow:0 4px 20px rgba(0,0,0,.12);--shadow-h:0 8px 30px rgba(0,0,0,.2);--r:12px;--fb:'Noto Sans TC',sans-serif;--fs:'Noto Serif TC',serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--cream);color:var(--dark);line-height:1.7}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(26,26,46,.97);backdrop-filter:blur(10px);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:58px;border-bottom:2px solid var(--red)}
+.nav-brand{font-family:var(--fs);color:var(--gold);font-size:1rem;font-weight:700;text-decoration:none;white-space:nowrap;flex-shrink:0}
+.nav-links{display:flex;gap:.1rem;list-style:none;overflow-x:auto;padding:0 .5rem}
+.nav-links a{color:rgba(255,255,255,.8);text-decoration:none;padding:.35rem .65rem;border-radius:6px;font-size:.78rem;transition:all .2s;white-space:nowrap}
+.nav-links a:hover{background:var(--red);color:#fff}
+
+/* HERO */
+.hero{height:100vh;min-height:620px;background:linear-gradient(145deg,#0d0d1a 0%,#4a0010 35%,#C41230 65%,#D4A017 100%);display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding-top:58px}
+.hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.03) 0,rgba(255,255,255,.03) 1px,transparent 0,transparent 50%);background-size:30px 30px}
+.hero-content{position:relative;z-index:1;color:#fff;max-width:820px;padding:2rem}
+.hero-badge{display:inline-block;background:rgba(212,160,23,.18);border:1px solid var(--gold);color:var(--gold);padding:.35rem 1.2rem;border-radius:30px;font-size:.82rem;letter-spacing:2px;margin-bottom:1.5rem;text-transform:uppercase}
+.hero h1{font-family:var(--fs);font-size:clamp(2rem,5vw,3.8rem);font-weight:700;line-height:1.2;margin-bottom:1rem;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{font-size:1.05rem;opacity:.9;margin-bottom:2rem;max-width:580px;margin-left:auto;margin-right:auto}
+.hero-stats{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+.hstat{text-align:center;background:rgba(255,255,255,.1);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.18);border-radius:var(--r);padding:.9rem 1.3rem;min-width:110px}
+.hstat .num{font-family:var(--fs);font-size:1.8rem;font-weight:700;color:var(--gold);display:block}
+.hstat .lbl{font-size:.75rem;opacity:.8}
+.scroll-hint{position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.5);font-size:.8rem;display:flex;flex-direction:column;align-items:center;gap:.3rem;animation:bounce 2s infinite}
+@keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+
+/* SECTIONS */
+.sec{padding:5rem 2rem;max-width:1200px;margin:0 auto}
+.sec-alt{background:#fff}
+.sec-alt .sec{max-width:1200px;margin:0 auto}
+.sec-title{font-family:var(--fs);font-size:1.9rem;color:var(--dark);margin-bottom:.4rem;display:flex;align-items:center;gap:.7rem}
+.sec-title .ico{color:var(--red);font-size:1.5rem}
+.sec-sub{color:var(--gray);margin-bottom:2rem;font-size:.92rem}
+.divider{width:56px;height:4px;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:2px;margin:.6rem 0 2rem}
+
+/* OVERVIEW */
+.ov-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.2rem;margin-top:1.5rem}
+.ov-card{background:#fff;border-radius:var(--r);padding:1.3rem;box-shadow:var(--shadow);border-top:4px solid var(--red);text-align:center;transition:transform .2s}
+.ov-card:hover{transform:translateY(-4px)}
+.ov-card .ov-ico{font-size:1.8rem;margin-bottom:.6rem}
+.ov-card .ov-val{font-size:1.4rem;font-weight:700;color:var(--red);font-family:var(--fs)}
+.ov-card .ov-lbl{color:var(--gray);font-size:.8rem;margin-top:.2rem}
+
+.route-bar{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;background:#fff;padding:1.2rem 1.5rem;border-radius:var(--r);box-shadow:var(--shadow);margin-top:1.5rem}
+.rc{background:var(--red);color:#fff;padding:.3rem .9rem;border-radius:20px;font-size:.8rem;font-weight:500}
+.rc.stay2{background:var(--gold);color:var(--dark)}
+.rarr{color:var(--gray);font-size:.85rem}
+
+/* DAY CARDS */
+.day-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);margin-bottom:1.3rem;overflow:hidden;border-left:5px solid var(--red);transition:box-shadow .2s}
+.day-card:hover{box-shadow:var(--shadow-h)}
+.day-hdr{display:flex;align-items:center;gap:.9rem;padding:1.1rem 1.4rem;cursor:pointer;background:linear-gradient(135deg,#fff,#FFF8F0);border-bottom:1px solid #F0E8DC;user-select:none}
+.day-num{background:var(--red);color:#fff;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--fs);font-weight:700;font-size:1rem;flex-shrink:0}
+.day-inf{flex:1}
+.day-dt{font-size:.75rem;color:var(--gray)}
+.day-ttl{font-size:1.1rem;font-weight:700;color:var(--dark)}
+.tags{display:flex;gap:.35rem;flex-wrap:wrap;margin-top:.25rem}
+.tag{padding:.12rem .55rem;border-radius:10px;font-size:.7rem;font-weight:500}
+.tg-y{background:#FEF3C7;color:#92400E}
+.tg-b{background:#DBEAFE;color:#1E40AF}
+.tg-g{background:#DCFCE7;color:#166534}
+.tg-r{background:#FEE2E2;color:#991B1B}
+.tg-p{background:#EDE9FE;color:#5B21B6}
+.day-tog{color:var(--gray);transition:transform .3s;font-size:1.1rem;flex-shrink:0}
+.day-card.open .day-tog{transform:rotate(180deg)}
+.day-body{display:none;padding:1.4rem}
+.day-card.open .day-body{display:block}
+
+/* TRANSPORT TABS */
+.tb-btns{display:flex;gap:.5rem;margin-bottom:1rem}
+.tb-btn{padding:.45rem 1.1rem;border:2px solid #E5E7EB;background:#fff;border-radius:8px;cursor:pointer;font-size:.82rem;font-weight:600;transition:all .2s;display:flex;align-items:center;gap:.35rem;font-family:var(--fb)}
+.tb-btn.a-drive{border-color:var(--blue);background:var(--blue);color:#fff}
+.tb-btn.a-transit{border-color:var(--green-dark);background:var(--green-dark);color:#fff}
+.tb-pane{display:none}
+.tb-pane.active{display:block}
+
+/* SCHEDULE */
+.sched{list-style:none}
+.si{display:flex;gap:.9rem;padding:.7rem 0;border-bottom:1px solid #F3F4F6;align-items:flex-start}
+.si:last-child{border:none}
+.st{background:var(--cream2);color:var(--red);padding:.18rem .55rem;border-radius:5px;font-size:.76rem;font-weight:700;white-space:nowrap;flex-shrink:0;min-width:62px;text-align:center}
+.sc{flex:1}
+.sn{font-weight:600;color:var(--dark);font-size:.92rem}
+.sd{font-size:.83rem;color:var(--gray);margin-top:.15rem;line-height:1.6}
+.sp{font-size:.78rem;color:var(--green-dark);font-weight:600;margin-top:.15rem}
+.spk{font-size:.78rem;color:var(--blue);margin-top:.1rem}
+
+/* ATTRACTION CARDS */
+.att-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.8rem;margin-top:1.5rem}
+.att-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:transform .3s,box-shadow .3s}
+.att-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-h)}
+.att-img-wrap{width:100%;height:210px;overflow:hidden;position:relative}
+.att-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.att-card:hover .att-img-wrap img{transform:scale(1.05)}
+.att-img-ph{height:210px;display:flex;align-items:center;justify-content:center;font-size:5rem}
+.att-body{padding:1.4rem}
+.att-loc{font-size:.75rem;color:var(--gray);display:flex;align-items:center;gap:.3rem;margin-bottom:.4rem}
+.att-ttl{font-family:var(--fs);font-size:1.15rem;font-weight:700;color:var(--dark)}
+.att-sub{font-size:.82rem;color:var(--gray);margin-bottom:.7rem}
+.att-desc{font-size:.87rem;color:#374151;line-height:1.85;margin-bottom:.9rem}
+.att-feats{list-style:none;margin-bottom:.9rem}
+.att-feats li{font-size:.83rem;padding:.28rem 0;display:flex;align-items:flex-start;gap:.4rem;border-bottom:1px solid #F9FAFB}
+.att-feats li::before{content:'✦';color:var(--gold);flex-shrink:0}
+.att-info{display:grid;grid-template-columns:1fr 1fr;gap:.4rem;background:var(--cream);border-radius:8px;padding:.9rem;font-size:.8rem}
+.att-ii{display:flex;align-items:center;gap:.35rem}
+.att-ii i{color:var(--red)}
+
+/* HOTEL CARDS */
+.htl-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:1.4rem;margin-top:1.5rem}
+.htl-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;border-top:4px solid var(--gold)}
+.htl-hdr{padding:1.1rem 1.4rem;background:linear-gradient(135deg,var(--dark),var(--navy));color:#fff}
+.htl-stay{font-size:.72rem;color:var(--gold);margin-bottom:.25rem}
+.htl-name{font-family:var(--fs);font-size:1.1rem;font-weight:700}
+.htl-ja{font-size:.77rem;opacity:.65;margin-top:.15rem}
+.htl-body{padding:1.2rem 1.4rem}
+.htl-price{display:flex;align-items:baseline;gap:.4rem;margin-bottom:.8rem}
+.htl-jpy{font-size:1.3rem;font-weight:700;color:var(--red);font-family:var(--fs)}
+.htl-twd{font-size:.85rem;color:var(--gray)}
+.htl-feats{list-style:none;font-size:.83rem}
+.htl-feats li{padding:.28rem 0;display:flex;gap:.45rem;border-bottom:1px solid #F3F4F6}
+.htl-feats li i{color:var(--gold);flex-shrink:0;margin-top:.15rem}
+
+/* RESTAURANT CARDS */
+.rst-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.5rem;margin-top:1.5rem}
+.rst-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:transform .2s}
+.rst-card:hover{transform:translateY(-4px)}
+.rst-img{height:175px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.rst-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.rst-img .em{font-size:4.5rem;position:relative;z-index:1;filter:drop-shadow(0 2px 10px rgba(0,0,0,.3))}
+.rst-city-badge{position:absolute;top:.6rem;left:.6rem;background:var(--red);color:#fff;font-size:.7rem;padding:.2rem .6rem;border-radius:10px;z-index:2}
+.rst-body{padding:1.1rem 1.3rem}
+.rst-name{font-family:var(--fs);font-size:1.05rem;font-weight:700;margin-bottom:.2rem}
+.rst-type{font-size:.78rem;color:var(--gray);margin-bottom:.5rem}
+.rst-desc{font-size:.83rem;color:#374151;line-height:1.75;margin-bottom:.7rem}
+.rst-dishes{list-style:none}
+.rst-dishes li{font-size:.8rem;padding:.22rem 0;display:flex;justify-content:space-between;border-bottom:1px dashed #F3F4F6}
+.rst-dishes li:last-child{border:none}
+.d-nm{color:var(--dark)}
+.d-pr{color:var(--red);font-weight:600}
+
+/* CHARACTER */
+.char-sec{background:linear-gradient(135deg,#E8F5E9 0%,#FCE4EC 100%);padding:5rem 0}
+.char-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;margin-top:1.5rem}
+.char-panel{background:#fff;border-radius:16px;padding:1.8rem;box-shadow:var(--shadow)}
+.char-panel.pikmin{border-top:5px solid #4CAF50}
+.char-panel.chiikawa{border-top:5px solid #FF8FAB}
+.char-hdr{display:flex;align-items:center;gap:.9rem;margin-bottom:1.3rem}
+.char-em{font-size:2.8rem}
+.char-nm{font-family:var(--fs);font-size:1.4rem;font-weight:700}
+.pikmin .char-nm{color:#2E7D32}
+.chiikawa .char-nm{color:#C2185B}
+.char-intro{font-size:.85rem;color:var(--gray);margin-bottom:1.2rem;line-height:1.7}
+.store-item{padding:.75rem;border-radius:10px;margin-bottom:.55rem;background:#FAFAFA;border:1px solid #F0F0F0}
+.store-nm{font-weight:700;font-size:.9rem}
+.store-dt{font-size:.78rem;color:var(--gray);margin-top:.15rem;line-height:1.5}
+.store-tip{font-size:.77rem;color:var(--green-dark);margin-top:.15rem;font-style:italic}
+
+/* TRANSPORT GUIDE */
+.tr-cmp{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
+.tr-panel{border-radius:var(--r);padding:1.4rem;box-shadow:var(--shadow)}
+.tr-panel.drive{background:linear-gradient(135deg,#EFF6FF,#fff);border-top:4px solid var(--blue)}
+.tr-panel.transit{background:linear-gradient(135deg,#F0FDF4,#fff);border-top:4px solid var(--green-dark)}
+.tr-panel h3{font-size:1.05rem;font-weight:700;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem}
+.drive h3{color:var(--blue)}
+.transit h3{color:var(--green-dark)}
+.rt-seg{background:#fff;border-radius:8px;padding:.75rem 1rem;margin-bottom:.55rem;font-size:.82rem;box-shadow:0 1px 4px rgba(0,0,0,.07)}
+.rt-ft{font-weight:600;margin-bottom:.25rem;color:var(--dark)}
+.rt-det{color:var(--gray);display:flex;flex-wrap:wrap;gap:.35rem}
+.rt-det span{background:#F3F4F6;padding:.12rem .45rem;border-radius:4px;font-size:.78rem}
+
+/* BUDGET */
+.bgt-tbl{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:.88rem}
+.bgt-tbl th{background:var(--dark);color:#fff;padding:.75rem 1rem;text-align:left}
+.bgt-tbl td{padding:.65rem 1rem;border-bottom:1px solid #F3F4F6}
+.bgt-tbl tr:nth-child(even) td{background:#FAFAFA}
+.bgt-tbl .sub td{background:#FEF3C7;font-weight:600}
+.bgt-tbl .tot td{background:var(--red);color:#fff;font-weight:700;font-size:.95rem}
+.bgt-tbl td:last-child,.bgt-tbl th:last-child{text-align:right}
+
+/* TIPS */
+.tip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.1rem;margin-top:1.5rem}
+.tip-card{background:#fff;border-radius:var(--r);padding:1.1rem;box-shadow:var(--shadow);border-left:4px solid var(--gold)}
+.tip-ico{font-size:1.6rem;margin-bottom:.4rem}
+.tip-ttl{font-weight:700;margin-bottom:.35rem;font-size:.95rem}
+.tip-txt{font-size:.82rem;color:#374151;line-height:1.7}
+
+footer{background:var(--dark);color:#fff;text-align:center;padding:3rem 2rem}
+footer .flogo{font-family:var(--fs);font-size:1.4rem;color:var(--gold);margin-bottom:.5rem}
+footer p{color:rgba(255,255,255,.55);font-size:.82rem}
+
+/* MEDIA */
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hero h1{font-size:1.9rem}
+  .hero-stats{gap:.8rem}
+  .hstat{min-width:85px;padding:.7rem}
+  .hstat .num{font-size:1.4rem}
+  .char-grid,.tr-cmp{grid-template-columns:1fr}
+  .att-grid{grid-template-columns:1fr}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+.reveal{animation:fadeUp .6s ease both}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a class="nav-brand" href="#">🏯 廣島・山口・島根 2026.12</a>
+  <ul class="nav-links">
+    <li><a href="#overview">行程總覽</a></li>
+    <li><a href="#itinerary">每日行程</a></li>
+    <li><a href="#attractions">景點介紹</a></li>
+    <li><a href="#hotels">住宿推薦</a></li>
+    <li><a href="#restaurants">美食指南</a></li>
+    <li><a href="#character">玩具特區</a></li>
+    <li><a href="#transport">交通指南</a></li>
+    <li><a href="#budget">預算總覽</a></li>
+    <li><a href="#tips">旅行貼士</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">✈ 2026年12月18日 — 12月28日</div>
+    <h1>廣島・山口・島根<br><em>西日本深度旅遊</em></h1>
+    <p>浮世鳥居・百鳥居神社・古戰場傳奇・神話之國出雲<br>11天10夜 帶你走遍日本西部最美的風景</p>
+    <div class="hero-stats">
+      <div class="hstat"><span class="num">11</span><span class="lbl">天數</span></div>
+      <div class="hstat"><span class="num">13</span><span class="lbl">個景點</span></div>
+      <div class="hstat"><span class="num">4</span><span class="lbl">個城市</span></div>
+      <div class="hstat"><span class="num">3</span><span class="lbl">次換飯店</span></div>
+      <div class="hstat"><span class="num">4000</span><span class="lbl">TWD/晚住宿</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint"><i class="fas fa-chevron-down"></i><span>向下捲動</span></div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-map-marked-alt ico"></i>行程總覽</h2>
+  <div class="divider"></div>
+  <div class="ov-grid">
+    <div class="ov-card"><div class="ov-ico">🏯</div><div class="ov-val">廣島</div><div class="ov-lbl">出發基地 5晚</div></div>
+    <div class="ov-card"><div class="ov-ico">🐡</div><div class="ov-val">下關</div><div class="ov-lbl">河豚聖地 2晚</div></div>
+    <div class="ov-card"><div class="ov-ico">⛩️</div><div class="ov-val">松江</div><div class="ov-lbl">水城神話 3晚</div></div>
+    <div class="ov-card"><div class="ov-ico">💴</div><div class="ov-val">≈32萬</div><div class="ov-lbl">JPY 總預算(2人)</div></div>
+    <div class="ov-card"><div class="ov-ico">🌡️</div><div class="ov-val">3–12°C</div><div class="ov-lbl">12月氣溫範圍</div></div>
+    <div class="ov-card"><div class="ov-ico">🚗</div><div class="ov-val">自駕+</div><div class="ov-lbl">大眾運輸雙方案</div></div>
+  </div>
+  <div class="route-bar">
+    <span class="rc stay2">廣島</span><span class="rarr">→</span>
+    <span class="rc">宮島</span><span class="rarr">→</span>
+    <span class="rc stay2">下關</span><span class="rarr">→</span>
+    <span class="rc">門司港</span><span class="rarr">→</span>
+    <span class="rc">角島</span><span class="rarr">→</span>
+    <span class="rc">元乃隅</span><span class="rarr">→</span>
+    <span class="rc stay2">松江/出雲</span><span class="rarr">→</span>
+    <span class="rc">稻佐之濱</span><span class="rarr">→</span>
+    <span class="rc">出雲大社</span><span class="rarr">→</span>
+    <span class="rc">松江城</span><span class="rarr">→</span>
+    <span class="rc stay2">廣島</span>
+  </div>
+  <p style="margin-top:1rem;font-size:.85rem;color:var(--gray);">🏨 住宿策略：廣島→下關→松江→廣島，全程僅換宿3次，最大化便利性</p>
+</div>
+</section>
+
+<!-- ITINERARY -->
+<div class="sec-alt">
+<section id="itinerary">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-calendar-alt ico"></i>每日行程</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">點擊每天標題展開詳細行程 ▼ 每天均提供「自駕」與「大眾運輸」兩種方案</p>
+  <div class="itinerary-timeline">
+
+  <!-- DAY 1 -->
+  <div class="day-card open" id="day1">
+    <div class="day-hdr" onclick="toggleDay('day1')">
+      <div class="day-num">1</div>
+      <div class="day-inf">
+        <div class="day-dt">12月18日（星期四）</div>
+        <div class="day-ttl">✈ 抵達廣島・開啟旅程</div>
+        <div class="tags">
+          <span class="tag tg-b">廣島市</span>
+          <span class="tag tg-g">入住 ANA Crowne Plaza</span>
+          <span class="tag tg-y">本通商店街</span>
+        </div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d1','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d1','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d1-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">抵達</span><div class="sc"><div class="sn">廣島空港 / 廣島站</div><div class="sd">廣島空港可租自駕車（推薦 Toyota Rent a Car 或 Times Car Rental），車費約 ¥10,000/天含保險。若新幹線抵達廣島站，可在站內租車。</div><div class="sp">費用：租車 ¥10,000/天起</div><div class="spk">停車：ANA Crowne Plaza 酒店停車場 ¥1,500/晚</div></div></li>
+          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">入住 ANA Crowne Plaza Hotel Hiroshima</div><div class="sd">廣島市中心最佳選擇之一，步行可達和平紀念公園、本通商店街。訂房時選「Superior Room」，空間寬敞舒適。</div><div class="spk">停車：酒店地下停車場，¥1,500/晚（需預約）</div></div></li>
+          <li class="si"><span class="st">17:30</span><div class="sc"><div class="sn">本通商店街 (本通り商店街)</div><div class="sd">廣島最熱鬧的步行購物街，全長約600m，集結流行服飾、日用品、伴手禮與餐廳。漫步感受廣島市區氣息，尋找皮克敏周邊商品！</div><div class="sp">費用：購物自由</div></div></li>
+          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：麗ちゃん お好み焼き（廣島燒）</div><div class="sd">廣島お好み村5樓，超人氣名店「麗ちゃん」。廣島燒最大特色是鋪入大量麵條與高麗菜，口感層次豐富，跟關西燒法截然不同。眼前鐵板現做，香氣逼人。</div><div class="sp">費用：每人 ¥1,200–1,500（約 TWD 270–340）</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d1-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">抵達</span><div class="sc"><div class="sn">廣島站（新幹線）</div><div class="sd">從大阪乘「のぞみ」約1.5小時，¥9,870/人；從東京約4小時，¥18,380/人。購買 ICOCA 交通卡於廣島站自動販賣機。</div><div class="sp">費用：大阪出發 ¥9,870/人</div></div></li>
+          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">前往酒店：廣島站→ANA Crowne Plaza</div><div class="sd">廣島站步行約15分，或搭路面電車1號線「紙屋町西」方向，「紙屋町西」站下車，步行5分。¥200。</div><div class="sp">費用：路面電車 ¥200 或步行</div></div></li>
+          <li class="si"><span class="st">17:30</span><div class="sc"><div class="sn">本通商店街</div><div class="sd">從酒店步行約5–10分即達。沿途欣賞廣島市區街道風景，路面電車叮叮作響充滿昭和感。</div></div></li>
+          <li class="si"><span class="st">19:30</span><div class="sc"><div class="sn">晚餐：麗ちゃん（廣島お好み村）</div><div class="sd">本通商店街步行約5分。廣島お好み村是一棟專門食廣島燒的建築，每層都是不同店家，麗ちゃん最多人排隊。</div><div class="sp">費用：每人 ¥1,200–1,500</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 -->
+  <div class="day-card" id="day2">
+    <div class="day-hdr" onclick="toggleDay('day2')">
+      <div class="day-num">2</div>
+      <div class="day-inf">
+        <div class="day-dt">12月19日（星期五）</div>
+        <div class="day-ttl">⛩ 宮島一日遊・嚴島神社 + 宮島水族館</div>
+        <div class="tags">
+          <span class="tag tg-r">世界遺產</span>
+          <span class="tag tg-b">宮島</span>
+          <span class="tag tg-g">牡蠣料理</span>
+        </div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d2','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d2','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d2-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">08:30</span><div class="sc"><div class="sn">廣島→宮島口 開車出發</div><div class="sd">從廣島市中心走國道2號或山陽道（廣島西IC→廿日市IC），全程約40分鐘。宮島島上禁止自駕，需在宮島口停車後搭船。</div><div class="sp">費用：高速公路費 ¥370（含ETC折扣）</div><div class="spk">停車：宮島口フェリーターミナル前 有料停車場 ¥700–1,000/日（多個選擇）。推薦「みやじまロープウェー前駐車場」¥800/日，步行3分到渡輪。</div></div></li>
+          <li class="si"><span class="st">09:20</span><div class="sc"><div class="sn">宮島フェリー（宮島口→宮島）</div><div class="sd">JR 西日本フェリー或宮島松大汽船，10分鐘橫渡瀨戶內海，抵達宮島。票價 ¥200/人（不含JR Pass），或使用JR Pass免費搭乘JR便。</div><div class="sp">費用：¥200/人（單程），來回¥360</div></div></li>
+          <li class="si"><span class="st">09:40</span><div class="sc"><div class="sn">嚴島神社 (厳島神社)</div><div class="sd">12月參拜人潮較少，可以悠閒拍攝「海上鳥居」。高潮時鳥居彷彿浮在海上，低潮則可步行至鳥居腳下觸摸。建議事先查詢潮汐時間。境內包括本殿、回廊、拜殿，建於西元593年，現為UNESCO世界遺產。</div><div class="sp">費用：參拜料 ¥300/人（約 TWD 67）</div></div></li>
+          <li class="si"><span class="st">11:30</span><div class="sc"><div class="sn">午餐：牡蠣屋（かきや）</div><div class="sd">嚴島神社表参道商店街旁，廣島縣產牡蠣名店。焼き牡蠣現烤肉質飽滿，牡蠣飯以牡蠣高湯炊煮鮮甜。冬季是廣島牡蠣最鮮美的季節！</div><div class="sp">費用：每人 ¥1,800–3,000（約 TWD 400–670）</div></div></li>
+          <li class="si"><span class="st">13:00</span><div class="sc"><div class="sn">宮島水族館 みやじマリン</div><div class="sd">日本難得位在世界遺產境內的水族館。館內有海獺（アシカ）表演秀、稀有的伊洛瓦底海豚（イラワジイルカ）、瀨戶內海特有魚種展示，以及可以觸摸生物的碰觸池，大人小孩都喜愛。</div><div class="sp">費用：成人 ¥1,400/人（約 TWD 310）</div></div></li>
+          <li class="si"><span class="st">15:00</span><div class="sc"><div class="sn">表参道商店街購物</div><div class="sd">選購廣島必買伴手禮：紅葉饅頭、宮島杓子（宮島コテ）、もみじ揚げ（現炸紅葉饅頭）。也有少量動漫周邊小店。</div><div class="sp">費用：購物自由，紅葉饅頭8入約¥1,000</div></div></li>
+          <li class="si"><span class="st">16:30</span><div class="sc"><div class="sn">搭船返回宮島口・驅車回廣島</div><div class="sd">傍晚從宮島渡輪望向夕陽，景色絕美。返回廣島市後建議在ゆめタウン廿日市或市內超市採購零食。</div></div></li>
+          <li class="si"><span class="st">19:00</span><div class="sc"><div class="sn">晚餐：広島牡蠣料理 牡蠣処 かなわ</div><div class="sd">廣島本通附近，以廣島縣產牡蠣為主打，提供牡蠣鍋、烤牡蠣、炸牡蠣丼等多種料理，冬季限定菜單特別豐富。</div><div class="sp">費用：每人 ¥3,000–5,000</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d2-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">08:20</span><div class="sc"><div class="sn">廣島站 → 宮島口（JR）</div><div class="sd">JR山陽本線，從廣島站搭乘至宮島口站，約30–35分鐘，班次約15–20分一班，非常方便。建議使用ICOCA或購買JR一日乘車券。</div><div class="sp">費用：¥410/人（單程），ICOCA可用</div></div></li>
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">宮島フェリー（宮島口→宮島）</div><div class="sd">有JR Pass可免費搭JR便（每小時2班）。持ICOCA購票則每人¥200，或搭宮島松大汽船¥200。步行5分從JR宮島口站到渡輪乘船口。</div><div class="sp">費用：¥200/人（無JR Pass）</div></div></li>
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">嚴島神社・午餐・水族館（同上行程）</div><div class="sd">宮島島上範圍不大，步行即可遊覽所有景點，不需另外搭車。全程步行路線：フェリー乗り場→嚴島神社→牡蠣屋（午餐）→宮島水族館→表参道→フェリー乗り場。</div></div></li>
+          <li class="si"><span class="st">16:30</span><div class="sc"><div class="sn">返回廣島市</div><div class="sd">搭渡輪回宮島口，再搭JR回廣島站（30分），全程約1小時。廣島站內就有超市和伴手禮店，可順便購物。</div><div class="sp">費用：¥610/人（來回，含渡輪）</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 3 -->
+  <div class="day-card" id="day3">
+    <div class="day-hdr" onclick="toggleDay('day3')">
+      <div class="day-num">3</div>
+      <div class="day-inf">
+        <div class="day-dt">12月20日（星期六）</div>
+        <div class="day-ttl">🛣 宮島SA → 下關・赤間神宮・壇之浦</div>
+        <div class="tags">
+          <span class="tag tg-y">宮島 SA</span>
+          <span class="tag tg-b">下關</span>
+          <span class="tag tg-r">古戰場</span>
+          <span class="tag tg-g">入住下關</span>
+        </div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d3','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d3','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d3-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">從廣島出發 → 山陽道（下行）</div><div class="sd">從廣島市中心上山陽道，行駛西向。距離約180km，車程約2.5小時（不含停留）。12月週末路況穩定，不需擔心塞車。</div><div class="sp">費用：高速公路費 ¥3,380（廣島IC→下關JCT，含ETC）</div></div></li>
+          <li class="si"><span class="st">09:40</span><div class="sc"><div class="sn">🅿 宮島 SA（下行線）停留 20分</div><div class="sd">山陽道上的超人氣休息站，被瀨戶內海和廣島灣環抱，天氣好時可遠眺宮島島影。販賣廣島限定紀念品、もみじ饅頭、牡蠣相關食品。SA 附設餐廳和便利店，停車免費（需繼續行駛高速）。</div><div class="sp">費用：僅購物費用（可¥0）</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">抵達下關 Check-in Kaikyo View Shimonoseki</div><div class="sd">飯店位於下關市街，部分房型可眺望關門海峽，地點絕佳。行李寄放後出發探索。</div><div class="spk">停車：飯店停車場 ¥500–800/晚（需確認當時費率）</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">赤間神宮 (赤間神宮)</div><div class="sd">供奉8歲薨逝的安德天皇，位於關門海峽岸邊，水天門為朱紅色唐破風造型，雄偉壯麗。境內有七盛塚（平家一門之墓），也是耳無芳一傳說的發源地（小泉八雲《怪談》著名故事）。12月人少清靜，最適合慢慢感受。</div><div class="sp">費用：免費參拜</div><div class="spk">停車：神社專用停車場（免費，約20台）</div></div></li>
+          <li class="si"><span class="st">14:30</span><div class="sc"><div class="sn">壇之浦古戦場跡</div><div class="sd">1185年源平最終決戰「壇之浦之戰」遺址，就在赤間神宮旁的海峽沿岸。立有源義經、平知盛的英雄像，可俯瞰關門大橋。潮流湍急的關門海峽，正是當年平家滅亡之地。</div><div class="sp">費用：免費（戶外）</div><div class="spk">停車：路旁免費停車（有限位置），或使用赤間神宮停車場步行3分</div></div></li>
+          <li class="si"><span class="st">15:30</span><div class="sc"><div class="sn">唐戸市場 (からと市場) 瀏覽</div><div class="sd">明日早上再來購物，今天先熟悉環境。市場外觀雄偉，就在海峽旁，可以拍攝關門大橋夜景。</div></div></li>
+          <li class="si"><span class="st">19:00</span><div class="sc"><div class="sn">晚餐：春帆楼（しゅんぱんろう）</div><div class="sd">創業於1888年的歷史名店，也是《下關條約》簽訂地。推薦「特製ふぐコース」包含虎河豚刺身（てっさ）、河豚火鍋（てっちり）、炸河豚（ふぐの唐揚げ）、河豚雜炊（ふぐ雑炊），是畢生難忘的美食體驗。</div><div class="sp">費用：コース料理 ¥8,000–15,000/人（約 TWD 1,800–3,300）</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d3-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">廣島站 → 小倉（新幹線のぞみ）</div><div class="sd">約40分，¥4,830/人。在小倉換JR山陽本線至下關約15分，¥220。或從廣島直搭高速巴士至下關，約3.5小時，¥3,200–3,800，性價比高但無法停靠宮島SA。</div><div class="sp">費用：新幹線+JR ¥5,050/人 或高速巴士 ¥3,500</div></div></li>
+          <li class="si"><span class="st">注意</span><div class="sc"><div class="sn">⚠️ 宮島SA（下行線）為高速公路專屬設施</div><div class="sd">大眾運輸無法進入宮島SA，此景點僅限自駕者體驗。搭車者可改在廣島站購買宮島SA限定商品（部分商品有在廣島市販售）。</div></div></li>
+          <li class="si"><span class="st">11:30</span><div class="sc"><div class="sn">抵達下關站・前往飯店</div><div class="sd">下關站有路線巴士前往市區各景點。赤間神宮乘「サンデン交通」巴士，約15分，¥230。</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">赤間神宮・壇之浦・唐戸市場（同上行程）</div><div class="sd">各景點步行距離約5–10分，可全程步行或搭巴士（唐戸バス停下車）。</div><div class="sp">費用：巴士 ¥230（來回¥460）</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 4 -->
+  <div class="day-card" id="day4">
+    <div class="day-hdr" onclick="toggleDay('day4')">
+      <div class="day-num">4</div>
+      <div class="day-inf">
+        <div class="day-dt">12月21日（星期日）</div>
+        <div class="day-ttl">🚇 關門海底隧道・門司港レトロ・海響館</div>
+        <div class="tags">
+          <span class="tag tg-p">跨縣隧道</span>
+          <span class="tag tg-b">門司港復古</span>
+          <span class="tag tg-r">海響館</span>
+          <span class="tag tg-y">焼きカレー</span>
+        </div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d4','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d4','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d4-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">唐戸市場 週末朝市</div><div class="sd">週六日限定的「活きいき馬関街」朝市！市場外廣場擺滿新鮮海產攤位，有河豚壽司、海膽軍艦、生蠔一顆¥200起，邊逛邊吃是下關最在地的體驗！</div><div class="sp">費用：每人 ¥1,000–2,000 吃到盡興</div><div class="spk">停車：唐戸市場 隣接駐車場 ¥300/時、或周邊路邊停車場</div></div></li>
+          <li class="si"><span class="st">10:00</span><div class="sc"><div class="sn">關門海底人行隧道（下關側入口）</div><div class="sd">全長780公尺，步行穿越關門海峽海底，連接山口縣（本州）和福岡縣（九州）！人行隧道完全免費，建議穿防寒外套因隧道內較冷。走到中間有縣界標示，可以拍攝「一腳踩兩縣」紀念照！單趟約15分鐘。</div><div class="sp">費用：步行免費（自行車¥20）</div><div class="spk">停車：下關側 みもすそ川公園 免費停車場（約50台）</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">關門フェリー → 門司港 (門司港レトロ)</div><div class="sd">走回下關側後，搭關門渡輪（5分鐘）前往門司港，更快更方便。或把車停在下關，步行+渡輪往返。門司港レトロ地区為明治–大正時代的紅磚建築街區，昔日是日本重要的國際貿易港口。</div><div class="sp">費用：渡輪 ¥400/人（來回¥800）</div><div class="spk">停車：車停下關，步行搭渡輪到門司港（省停車費）</div></div></li>
+          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">午餐：焼きカレー（門司港名物）</div><div class="sd">門司港最著名的美食！將咖哩飯放入烤箱焗烤至表面金黃焦香，搭配起司和半熟蛋，濃郁鮮美。門司港レトロ地区內有多家店鋪，推薦「伽哩本舗」或「BEAR FRUITS」。</div><div class="sp">費用：每人 ¥1,200–1,600（約 TWD 270–355）</div></div></li>
+          <li class="si"><span class="st">13:30</span><div class="sc"><div class="sn">門司港レトロ地区 散步</div><div class="sd">參觀舊門司税関（明治時代海關建築）、門司港レトロ展望室（31樓免費展望台）、旧大阪商船ビル（橙色磚塔）、九州鐵道紀念館（¥300）。香蕉批發商也是門司港特色，可以購買香蕉相關商品。</div><div class="sp">費用：散步免費，各館¥0–400</div></div></li>
+          <li class="si"><span class="st">15:30</span><div class="sc"><div class="sn">搭渡輪返回下關 → 海響館</div><div class="sd">返回下關後，直接驅車前往海響館。</div></div></li>
+          <li class="si"><span class="st">16:00</span><div class="sc"><div class="sn">海響館 (Kaikyokan / 下關市立しものせき水族館)</div><div class="sd">世界最大的河豚展覽館！館內收藏超過100種以上的河豚魚，並有關門海峽特有的魚種展示。企鵝館有黑腳企鵝和帝企鵝，海豚秀和海豹秀每日定時表演。可觸摸的生物池讓大人小孩都開心。</div><div class="sp">費用：成人 ¥2,090/人（約 TWD 460）</div><div class="spk">停車：海響館 駐車場 ¥300/時，最高 ¥1,500/日</div></div></li>
+          <li class="si"><span class="st">18:30</span><div class="sc"><div class="sn">晚餐：唐戸市場周邊海鮮居酒屋</div><div class="sd">推薦「ふく一」或唐戸市場旁的居酒屋，點盤河豚唐揚げ（炸河豚）配日本酒，輕鬆暢飲。也可在超市採購食材，享受在地生活感。</div><div class="sp">費用：每人 ¥2,000–3,500</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d4-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">唐戸市場（步行或巴士）</div><div class="sd">從下關站搭サンデン交通巴士至唐戸，約15分，¥230。週末朝市體驗同自駕行程。</div><div class="sp">費用：巴士 ¥230</div></div></li>
+          <li class="si"><span class="st">10:00</span><div class="sc"><div class="sn">關門海底人行隧道（步行！）</div><div class="sd">從唐戸市場步行至みもすそ川公園入口（下關側）約15分。穿越隧道到門司港側，再搭關門渡輪回下關（¥400），形成循環路線。</div><div class="sp">費用：隧道免費，渡輪¥400</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">関門フェリー → 門司港</div><div class="sd">從下關唐戸渡輪乗り場搭渡輪，5分抵達門司港。班次密集，約20分一班。</div><div class="sp">費用：¥400/人</div></div></li>
+          <li class="si"><span class="st">12:00</span><div class="sc"><div class="sn">門司港午餐・散步（同上行程）</div><div class="sd">門司港レトロ地区步行遊覽，所有景點集中，無需另搭車。</div></div></li>
+          <li class="si"><span class="st">15:30</span><div class="sc"><div class="sn">渡輪返回下關→海響館（巴士）</div><div class="sd">唐戸渡輪口搭巴士至「海響館前」，約10分，¥230。</div><div class="sp">費用：巴士 ¥230</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLACEHOLDER FOR DAYS 5-11 -->
+  <!-- DAY 5 -->
+  <div class="day-card" id="day5">
+    <div class="day-hdr" onclick="toggleDay('day5')">
+      <div class="day-num">5</div>
+      <div class="day-inf">
+        <div class="day-dt">12月22日（星期一）</div>
+        <div class="day-ttl">🌊 角島大橋・元乃隅神社 → 移住松江</div>
+        <div class="tags"><span class="tag tg-b">角島</span><span class="tag tg-r">百鳥居</span><span class="tag tg-g">移住松江</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d5','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d5','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d5-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">08:30</span><div class="sc"><div class="sn">下關 Check-out → 角島大橋 出發</div><div class="sd">從下關市中心走国道191号北上，沿日本海海岸線行駛，全程約60km，車程約1小時。沿途海景壯觀，可以邊開邊欣賞。</div><div class="sp">費用：一般道路，無高速費</div></div></li>
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">角島大橋 (つのしま大橋)</div><div class="sd">全長1,780公尺，連接本州與角島，橋面距海面極低，與翡翠綠的日本海形成絕妙畫面，被CNN評選為「日本最美大橋之一」。12月晴天時水色湛藍清澈，幾乎無遊客，是最佳攝影時機。大橋免收通行費。角島頂端有角島燈台（明治初期建造，¥200入場），建議驅車至島端拍照。</div><div class="sp">費用：橋通行免費，燈台 ¥200</div><div class="spk">停車：道の駅 北浦街道 豊北（免費，100台以上）橋頭拍照停車免費</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">元乃隅神社 (もとのすみ神社)</div><div class="sd">123座朱紅色鳥居沿懸崖綿延100公尺，守護著面向日本海的壯闊景色，2015年被CNN評為「日本最美31個地點之一」。鳥居最頂端有一個高達6公尺的鳥居，其頂端設有賽錢箱，投幣進去代表願望成真，是日本罕見的奇特設計！神社祭祀宇迦之御魂神，保佑商業繁榮・漁業豐收・交通安全。建議穿防滑鞋，步道坡度較陡。</div><div class="sp">費用：免費參拜</div><div class="spk">停車：元乃隅神社 専用駐車場（免費，約50台），距神社步行5分</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">午餐：道の駅 センザキッチン または長門市内</div><div class="sd">長門市仙崎道の駅，供應新鮮日本海海鮮定食，推薦「仙崎かまぼこ」（魚板）和「のどぐろ定食」（喉黑魚）。價位親民，風景迷人。</div><div class="sp">費用：每人 ¥1,200–2,000</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">出發前往松江（島根県）</div><div class="sd">從長門市走山陰道方向，沿日本海東行，全程約180km，車程約2.5–3小時。途中可欣賞山陰海岸地質公園風景。</div><div class="sp">費用：高速公路（部分路段） ¥1,500–2,500</div></div></li>
+          <li class="si"><span class="st">17:00</span><div class="sc"><div class="sn">抵達松江 Check-in 松江エクセルホテル東急</div><div class="sd">松江市中心最佳位置，步行10分可達松江城。房型寬敞，早餐豐盛。</div><div class="spk">停車：近隣コインパーキング ¥150–200/30分，飯店可協助導引</div></div></li>
+          <li class="si"><span class="st">18:30</span><div class="sc"><div class="sn">晚餐：荒木屋（あらきや）出雲そば</div><div class="sd">出雲市內百年老店，三段重割子そば是招牌，將不同配料（山藥泥、生蛋、海苔）分別放在三個木漆碗中，依序澆上醬汁享用，口感清爽獨特。出雲そば以蕎麥連殼磨製，顏色較深，香氣更濃郁。</div><div class="sp">費用：每人 ¥1,000–1,500</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d5-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">重要說明</span><div class="sc"><div class="sn">⚠️ 角島大橋・元乃隅神社 強烈建議自駕</div><div class="sd">此區大眾運輸班次稀少（巴士1–2小時一班），且兩景點距離約25km，計程車費昂貴（¥5,000起）。若無法自駕，建議從下關或長門市租一日車（Nissan Rent-a-Car, ¥8,000起）遊覽此段後還車，再搭火車繼續行程。</div></div></li>
+          <li class="si"><span class="st">替代方案</span><div class="sc"><div class="sn">下關站 → 長門市 → 益田 → 松江（JR山陰本線）</div><div class="sd">下關→長門市 約40分 ¥990 / 長門市→益田 約2小時 ¥2,310 / 益田→松江 約2.5小時 ¥2,860。總時間約6小時，建議早出發。若跳過角島和元乃隅，直接前往出雲/松江，可多給隔天景點更多時間。</div><div class="sp">費用：全程約 ¥6,160/人</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 6 -->
+  <div class="day-card" id="day6">
+    <div class="day-hdr" onclick="toggleDay('day6')">
+      <div class="day-num">6</div>
+      <div class="day-inf">
+        <div class="day-dt">12月23日（星期二）</div>
+        <div class="day-ttl">🌅 稻佐之濱・出雲大社・神話之國</div>
+        <div class="tags"><span class="tag tg-r">神話聖地</span><span class="tag tg-b">出雲大社</span><span class="tag tg-y">結緣</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d6','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d6','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d6-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">06:30</span><div class="sc"><div class="sn">稻佐之濱 (稲佐の浜) 日出時分</div><div class="sd">日本神話中最神聖的海灘！每年農曆10月（神在月），全日本八百萬神靈在此登陸，前往出雲大社參集。海中央矗立著祭祀弁財天的「弁天島」，12月清晨日出前光線呈橙紅色，景色壯觀神秘。依神社習俗，需在此帶走一把沙子，帶至出雲大社素鵞社奉納，可換取神聖守護。12月氣溫約3–8°C，請穿厚外套。</div><div class="sp">費用：免費</div><div class="spk">停車：稲佐の浜駐車場（免費，約20台）</div></div></li>
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">出雲大社 (出雲大社) 開門參拜</div><div class="sd">日本最古老、最重要的神社之一，供奉「大国主命」（大地之神、關係姻緣之神）。全日本只有出雲大社是「二禮四拍手一禮」而非通常的「二拍手」。必看：神楽殿前懸掛重達13噸的超大注連繩（しめなわ），及国宝本殿。素鵞社（大社後方）是奉納稻佐之濱沙子、換取同量神砂的場所，傳說攜回可保家平安。</div><div class="sp">費用：免費（御守 ¥500起）</div><div class="spk">停車：出雲大社 大社駐車場（免費，大型停車場，步行2分到大鳥居）</div></div></li>
+          <li class="si"><span class="st">11:30</span><div class="sc"><div class="sn">神門通り 購物散步</div><div class="sd">大社前的商店街，各種出雲土產齊全。必買：出雲で買うと縁起がいい！「しまね和牛コロッケ」（島根和牛可樂餅）、出雲ぜんざい（出雲善哉，甜紅豆湯，傳說是日本善哉的發源地！）。</div><div class="sp">費用：購物自由，善哉¥600–800</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">午餐：出雲そば 八雲庵（やくもあん）</div><div class="sd">出雲大社前神門通り上的人氣老舖，割子そば三段 ¥1,000，加上出雲名物「ぜんざい」套餐超值。庭院式建築充滿情調，非常適合邊賞雪景邊吃蕎麥麵。</div><div class="sp">費用：每人 ¥1,000–1,500</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">出雲市內下午行程 / 休息</div><div class="sd">可參觀「島根縣立古代出雲歴史博物館」（出雲大社旁，¥620，展示古代出雲文化）、或前往日御碕神社（日御碕灯台）欣賞懸崖燈塔。12月日落早約16:30，建議傍晚前返回松江。</div></div></li>
+          <li class="si"><span class="st">17:00</span><div class="sc"><div class="sn">驅車返回松江（約40分）</div><div class="sd">沿山陰道行駛，約40km。</div><div class="sp">費用：¥700（高速）</div></div></li>
+          <li class="si"><span class="st">18:30</span><div class="sc"><div class="sn">晚餐：松江市海鮮居酒屋「のどぐろ」</div><div class="sd">松江是のどぐろ（喉黑魚）名產地，這種魚脂肪豐厚，鹽燒後入口即化，堪稱「白身魚の大トロ」。推薦「居酒屋 寅丸」或「魚心」，搭配島根地酒「竹下酒造」品飲。</div><div class="sp">費用：每人 ¥3,000–5,000</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d6-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">06:30</span><div class="sc"><div class="sn">松江站 → 出雲市方向（早班巴士）</div><div class="sd">從松江站搭一畑電車至「出雲大社前」約1小時10分，¥820（但最早班約08:00）。若要看日出稻佐之濱，建議搭計程車（松江→稻佐之濱 約40分，¥4,000起）。</div><div class="sp">費用：一畑電車¥820/人</div></div></li>
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">出雲大社前駅 → 步行至出雲大社（5分）</div><div class="sd">一畑電車「出雲大社前」站步行5分即到大鳥居。之後的行程（稻佐之濱→出雲大社→神門通り）步行或騎租借自行車（出雲市有共享單車）均可完成，稻佐之濱步行約15分。</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">返回松江（一畑電車）</div><div class="sd">出雲大社前→松江しんじ湖温泉 約1小時10分。或搭JR山陰本線（出雲市站→松江站）約40分，¥560。</div><div class="sp">費用：一畑電車 ¥820 或 JR ¥560/人</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 7 -->
+  <div class="day-card" id="day7">
+    <div class="day-hdr" onclick="toggleDay('day7')">
+      <div class="day-num">7</div>
+      <div class="day-inf">
+        <div class="day-dt">12月24日（星期三）聖誕節前夕 🎄</div>
+        <div class="day-ttl">🏯 松江城・堀川遊覧・聖誕晚餐</div>
+        <div class="tags"><span class="tag tg-r">國寶</span><span class="tag tg-b">遊船</span><span class="tag tg-p">聖誕前夕</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d7','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d7','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d7-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">松江城 (松江城 / 千鳥城)</div><div class="sd">日本現存12座天守閣中最後一座被認定為「国宝」的天守（2015年認定）。建於1611年，五層黑色天守造型沉穩大氣，暱稱「千鳥城」（因屋頂形如千鳥展翅）。登至最高層可360°俯瞰松江市、宍道湖全景，12月若降雪更是絕景。城內保存當年城主使用的武器、甲冑展示。</div><div class="sp">費用：成人 ¥680/人（約 TWD 150）</div><div class="spk">停車：松江城山公園 南口・北口停車場 ¥200/30分，最高¥800/日</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">堀川遊覧船 (堀川游覧)</div><div class="sd">搭乘傳統木船，在松江城周圍的護城河上緩緩游行，全程約50分鐘，穿越14座低矮橋梁，坐在船上需低頭配合！冬季船上備有御暖炬（炬燵），超級溫暖。途中可欣賞武家屋敷（武士宅邸）、松江大橋等歷史建築，船夫會沿途介紹景點。</div><div class="sp">費用：成人 ¥1,500/人（約 TWD 330）</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">午餐：塩見縄手 附近餐廳</div><div class="sd">塩見縄手是松江保存最完好的武家屋敷街道，兩側有小泉八雲記念館、武家屋敷（¥310）。這一帶有數家特色餐廳和咖啡館，推薦「湖畔 café」欣賞宍道湖景用餐。</div><div class="sp">費用：每人 ¥1,000–1,800</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">松江市街購物・宍道湖夕陽</div><div class="sd">宍道湖（しんじこ）被評為「日本夕陽百選」，特別在12月冬日低角度陽光映照下，夕陽顏色橙紅壯觀。嫁島小島剪影與夕陽構成絕美畫面，約16:00–16:30日落，請準時到達宍道湖岸邊。</div></div></li>
+          <li class="si"><span class="st">19:00</span><div class="sc"><div class="sn">🎄 聖誕特別晚餐</div><div class="sd">推薦「割烹 みな美」（宍道湖旁老字號日式割烹，聖誕節有特別套餐）或松江New Urban Hotel旁的西餐廳。也可選擇在飯店享用聖誕節特別晚餐，部分飯店有設計限定メニュー。今晚好好慶祝！🎄🥂</div><div class="sp">費用：每人 ¥5,000–10,000（聖誕特別菜單）</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d7-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">松江站 → 松江城（步行または市內巴士）</div><div class="sd">從松江站步行約20分（途中欣賞市區），或搭「ぐるっと松江レイクラインバス」（観光巴士，¥300）到「松江城・県庁前」站。</div><div class="sp">費用：觀光巴士¥300 或步行免費</div></div></li>
+          <li class="si"><span class="st">所有景點</span><div class="sc"><div class="sn">松江城→堀川遊覧→塩見縄手→宍道湖</div><div class="sd">松江城周邊景點步行可達，堀川遊覧乘船口在城堡正下方，全程步行即可完成今日行程，非常便利。レイクラインバス可環繞主要景點，一日乘車券¥800推薦購買。</div><div class="sp">費用：一日巴士券¥800</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 8 -->
+  <div class="day-card" id="day8">
+    <div class="day-hdr" onclick="toggleDay('day8')">
+      <div class="day-num">8</div>
+      <div class="day-inf">
+        <div class="day-dt">12月25日（星期四）🎄 聖誕節</div>
+        <div class="day-ttl">🚄 松江 → 返回廣島・和平記念公園</div>
+        <div class="tags"><span class="tag tg-b">返回廣島</span><span class="tag tg-r">世界遺產</span><span class="tag tg-g">入住廣島</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d8','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d8','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d8-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">松江 Check-out → 廣島出發</div><div class="sd">走山陰道→中国道，或走山陰道到岡山方向接山陽道，全程約220km，車程約3小時。建議走後者（稍遠但高速路況更好）。途中可在蒜山SA停車休息。</div><div class="sp">費用：高速費約¥3,200（ETC折扣後）</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">抵達廣島・Check-in ANA Crowne Plaza</div><div class="sd">返回熟悉的廣島，行李放置後輕裝出發。</div><div class="spk">停車：酒店地下停車場 ¥1,500/晚</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">廣島平和記念公園 & 原爆ドーム</div><div class="sd">聖誕節造訪廣島和平紀念公園，意義格外深遠。1945年8月6日原爆遺跡「原爆ドーム」（UNESCO世界遺產），是人類歷史上最沉重的印記。紀念館內詳細展示原爆前後影像，令人深思。公園內的「原爆の子の像」（折鶴少女佐佐木禎子的故事）讓人動容。建議在此靜靜感受和平的珍貴。</div><div class="sp">費用：公園免費，紀念館成人¥200</div></div></li>
+          <li class="si"><span class="st">16:30</span><div class="sc"><div class="sn">廣島城（廣島城）</div><div class="sd">和平公園步行約20分，1589年毛利輝元建造，原爆後重建，現為廣島市的象徵之一。天守內有歷史展示。12月冬日傍晚天色快暗，可拍攝夜間點燈的廣島城。</div><div class="sp">費用：成人¥370</div></div></li>
+          <li class="si"><span class="st">19:00</span><div class="sc"><div class="sn">🎄 聖誕晚餐：廣島市區</div><div class="sd">推薦「廣島ステーキハウス」或本通附近的西餐廳。也可去本通商店街享受廣島聖誕市集氣氛，品嘗廣島燒慶祝聖誕！</div><div class="sp">費用：每人 ¥3,000–6,000</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d8-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">松江站 → 岡山（特急やくも）→ 廣島（新幹線）</div><div class="sd">特急やくも：松江→岡山 約2.5小時，¥5,940。新幹線のぞみ：岡山→廣島 約30分，¥3,760。總費用約¥9,700/人，全程約3.5小時。</div><div class="sp">費用：¥9,700/人（約 TWD 2,100）</div></div></li>
+          <li class="si"><span class="st">13:00</span><div class="sc"><div class="sn">廣島站 → 平和記念公園（路面電車）</div><div class="sd">廣島站搭2號線或6號線，至「原爆ドーム前」站下車，約25分，¥200。或步行從和平公園方向漫遊。</div><div class="sp">費用：路面電車¥200</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 9 -->
+  <div class="day-card" id="day9">
+    <div class="day-hdr" onclick="toggleDay('day9')">
+      <div class="day-num">9</div>
+      <div class="day-inf">
+        <div class="day-dt">12月26日（星期五）</div>
+        <div class="day-ttl">🛍 廣島市區 + 皮克敏・吉伊卡哇購物天！</div>
+        <div class="tags"><span class="tag tg-g">購物天堂</span><span class="tag tg-p">吉伊卡哇</span><span class="tag tg-g">皮克敏</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d9','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d9','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d9-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">10:00</span><div class="sc"><div class="sn">🎮 ヨドバシカメラ マルチメディア広島</div><div class="sd">廣島最大的電器・遊戲店，Nintendo Switch遊戲和皮克敏官方周邊（玩偶、吊飾、遊戲）一應俱全。頂樓有玩具専門コーナー，建議早到避開人潮。</div><div class="sp">費用：購物自由</div><div class="spk">停車：ヨドバシ提携停車場（購物可抵時間），旁邊有コインパーキング¥300/時</div></div></li>
+          <li class="si"><span class="st">11:30</span><div class="sc"><div class="sn">🎀 アニメイト広島（Animate廣島）</div><div class="sd">吉伊卡哇（ちいかわ）周邊商品最齊全的地方！包括：ちいかわ・ハチワレ・うさぎ公仔、壓克力立牌、文具、包包、iPhone殼等。12月有聖誕節限定商品上架，建議多帶預算！</div><div class="sp">費用：購物自由，公仔約¥1,500–3,000</div></div></li>
+          <li class="si"><span class="st">13:00</span><div class="sc"><div class="sn">午餐：本通商店街周邊</div><div class="sd">廣島お好み焼き或回転寿司，輕鬆快速用餐後繼續購物！</div><div class="sp">費用：每人¥1,000–1,500</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">🎯 ドン・キホーテ 廣島店 + ゲームセンター</div><div class="sd">驚安の殿堂「唐吉訶德」廣島店，吉伊卡哇毛絨公仔、皮克敏抱枕都能在這找到，價格比官方便宜。附近遊樂場的UFOキャッチャー（夾娃娃機）有大量吉伊卡哇和皮克敏景品，挑戰一下！</div><div class="sp">費用：夾娃娃每次¥100–200</div></div></li>
+          <li class="si"><span class="st">15:30</span><div class="sc"><div class="sn">ヴィレッジヴァンガード 廣島 (Village Vanguard)</div><div class="sd">充滿個性的雜貨書店，販售各種二次元周邊、奇特文具，皮克敏和吉伊卡哇的稀有商品在這裡有機會找到。年底限定商品也不少。</div></div></li>
+          <li class="si"><span class="st">17:00</span><div class="sc"><div class="sn">廣島駅 エキエ（駅ビル購物）</div><div class="sd">廣島站購物中心「ECIEL」，集結各種廣島伴手禮（紅葉饅頭、牡蠣醬）和品牌商店。行程最後再來一次大採購！</div></div></li>
+          <li class="si"><span class="st">19:00</span><div class="sc"><div class="sn">晚餐：廣島燒！お好み焼き 一心</div><div class="sd">廣島在地人愛店，鐵板現烤廣島燒，豐盛的蔬菜與麵條，吃完有充實感。搭配廣島地啤酒「SAKURA CRAFT」，美食之旅的完美句點。</div><div class="sp">費用：每人¥1,200–1,800</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d9-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">10:00</span><div class="sc"><div class="sn">廣島市內全程步行 or 路面電車</div><div class="sd">ヨドバシカメラ（廣島站前）→ アニメイト（本通商店街附近，步行約15分）→ ドン・キホーテ（紙屋町附近）→ ヴィレッジヴァンガード → 廣島駅。全程搭路面電車即可，單次¥200，一日乘車券¥700推薦購買。</div><div class="sp">費用：路面電車一日券¥700</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 10 -->
+  <div class="day-card" id="day10">
+    <div class="day-hdr" onclick="toggleDay('day10')">
+      <div class="day-num">10</div>
+      <div class="day-inf">
+        <div class="day-dt">12月27日（星期六）</div>
+        <div class="day-ttl">🛍 最後採購・縮景園・告別廣島</div>
+        <div class="tags"><span class="tag tg-y">最後購物</span><span class="tag tg-b">日本庭園</span><span class="tag tg-r">告別晚餐</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <div class="tb-btns">
+        <button class="tb-btn a-drive" onclick="switchTab('d10','drive')"><i class="fas fa-car"></i>自駕方案</button>
+        <button class="tb-btn" onclick="switchTab('d10','transit')"><i class="fas fa-train"></i>大眾運輸</button>
+      </div>
+      <div class="tb-pane active" id="d10-drive">
+        <ul class="sched">
+          <li class="si"><span class="st">09:30</span><div class="sc"><div class="sn">縮景園 (縮景園)</div><div class="sd">廣島藩主淺野長晟建造的日本回遊式庭園，名稱取自中國西湖「縮小景色」之意。冬日楓葉早已凋落，但靜謐的枯山水景色別有風情，若當日降雪更是難得美景。</div><div class="sp">費用：成人¥260</div><div class="spk">停車：縮景園北側コインパーキング ¥200/30分</div></div></li>
+          <li class="si"><span class="st">11:00</span><div class="sc"><div class="sn">廣島三越・松坂屋 伴手禮最後掃貨</div><div class="sd">百貨公司B1地下食品區是最後補貨的好地方：牡蠣醬油、紅葉饅頭禮盒、廣島菜、momiji chips。年末特賣可能有折扣！</div></div></li>
+          <li class="si"><span class="st">12:30</span><div class="sc"><div class="sn">午餐：廣島つけ麺 or 汁なし担担麺</div><div class="sd">廣島限定的「つけ麵」（沾麵）是近年廣島B級グルメ代表，辛辣冷卻的沾汁搭配粗麵條，相當過癮。推薦「廣島つけ麺棒」本通店。</div><div class="sp">費用：每人¥900–1,200</div></div></li>
+          <li class="si"><span class="st">14:00</span><div class="sc"><div class="sn">還車 + 行李打包整理</div><div class="sd">若自駕，最後整理行李時確認所有紀念品打包妥當。還車前加滿油，廣島市內有多家加油站（ENEOS, Idemitsu）。</div><div class="sp">費用：汽油自行計算（約¥20,000–30,000 整段行程）</div></div></li>
+          <li class="si"><span class="st">19:00</span><div class="sc"><div class="sn">告別晚餐：炭火焼き 廣島牛</div><div class="sd">用廣島和牛（広島牛）燒肉為這趟旅行劃下完美句點！推薦「焼肉 彩苑」或「牛若丸」，廣島牛脂花均勻，入口即化。搭配廣島地酒或生啤，乾杯！🍻</div><div class="sp">費用：每人¥4,000–7,000</div></div></li>
+        </ul>
+      </div>
+      <div class="tb-pane" id="d10-transit">
+        <ul class="sched">
+          <li class="si"><span class="st">全天</span><div class="sc"><div class="sn">路面電車 + 步行</div><div class="sd">縮景園（路面電車「縮景園前」站）→百貨公司（本通）→午餐→自由購物。與自駕行程相同，大眾運輸更方便（無停車煩惱），一日乘車券¥700。</div><div class="sp">費用：路面電車¥700</div></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 11 -->
+  <div class="day-card" id="day11">
+    <div class="day-hdr" onclick="toggleDay('day11')">
+      <div class="day-num">11</div>
+      <div class="day-inf">
+        <div class="day-dt">12月28日（星期日）</div>
+        <div class="day-ttl">✈ 返程・旅行圓滿結束</div>
+        <div class="tags"><span class="tag tg-y">回程日</span></div>
+      </div>
+      <i class="fas fa-chevron-down day-tog"></i>
+    </div>
+    <div class="day-body">
+      <ul class="sched">
+        <li class="si"><span class="st">08:00</span><div class="sc"><div class="sn">酒店 Check-out</div><div class="sd">辦理退房，寄存行李若班機較晚。</div></div></li>
+        <li class="si"><span class="st">09:00</span><div class="sc"><div class="sn">廣島站 → 廣島空港 or 繼續新幹線</div><div class="sd">廣島空港：從廣島站搭機場巴士約45分，¥1,340。新幹線：若從廣島站繼續搭回日本各地。年底機票請提早訂，12月28日為年末旺季。</div><div class="sp">費用：機場巴士¥1,340 or 新幹線各地</div></div></li>
+        <li class="si"><span class="st">回憶</span><div class="sc"><div class="sn">帶著滿滿收穫踏上歸程 🎌</div><div class="sd">11天走遍廣島・下關・門司港・角島・出雲・松江，既看了世界遺產，也逛了神話聖地，還找到皮克敏和吉伊卡哇的寶物，這趟西日本之旅圓滿充實！</div></div></li>
+      </ul>
+    </div>
+  </div>
+
+  </div><!-- end timeline -->
+</div>
+</section>
+</div><!-- end sec-alt -->
+
+<!-- ATTRACTIONS -->
+<section id="attractions">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-camera ico"></i>景點詳細介紹</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">13個精選景點完整攻略，每個景點均含歷史背景、特色亮點、實用資訊</p>
+  <div class="att-grid">
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Itsukushima_torii_angle.jpg/1280px-Itsukushima_torii_angle.jpg" alt="嚴島神社大鳥居" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#8B0000,#C41230);display:none" id="ph1">⛩️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>廣島縣 廿日市市 宮島</div>
+        <div class="att-ttl">嚴島神社</div>
+        <div class="att-sub">厳島神社 ／ UNESCO世界文化遺產</div>
+        <div class="att-desc">建於593年（推古天皇年間），嚴島神社是日本最具代表性的神社之一，以海中矗立的朱紅色大鳥居聞名世界。高漲時分，神社主殿與回廊彷彿漂浮於瀨戶內海之上，構成令人屏息的絕美景致。低潮時可步行至大鳥居腳下親身感受它的巨大與莊嚴，鳥居高約16公尺、重達60噸，以島上楠木建造。主殿採「寢殿造」平安時代建築樣式，以朱紅色柱子與白牆構成，四周海浪輕拍，海鹿自在穿梭，如夢如幻。12月人少氣溫清涼，是攝影的最佳時節。</div>
+        <ul class="att-feats">
+          <li>高潮時鳥居浮海奇景，建議搭配潮汐表規劃參觀時間</li>
+          <li>低潮時可步行至大鳥居，親手觸摸千年神木</li>
+          <li>回廊全長約275公尺，眺望瀨戶內海絕景</li>
+          <li>境內鹿群與神社和諧共存，是宮島的標誌性風景</li>
+          <li>夜間點燈（日没後）更有神秘氛圍</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>06:30–18:00（季節變動）</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>¥300/人</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留2–3小時</div>
+          <div class="att-ii"><i class="fas fa-ship"></i>宮島口渡輪10分</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#1A3A5C,#2E86AB)">🐟</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>廣島縣 廿日市市 宮島</div>
+        <div class="att-ttl">宮島水族館</div>
+        <div class="att-sub">みやじマリン ／ 世界遺產境內的水族館</div>
+        <div class="att-desc">位於宮島島上，是日本罕見存在於UNESCO世界遺產境內的水族館。館內以「瀨戶內海的海洋生態」為主題，展示超過350種・約13,000隻生物。最受歡迎的是海獺（アシカ）表演及可愛的水豚泡湯展示（冬季限定！）。伊洛瓦底海豚（イラワジイルカ）是全日本極少數能看到的稀有種，圓滾滾的頭部和內斂的笑容讓人一見傾心。觸摸水池讓遊客能親手碰觸海星、小型鯊魚等生物，親子同遊的熱門設施。12月冬日，水豚泡暖暖溫泉池的畫面超療癒！</div>
+        <ul class="att-feats">
+          <li>全日本稀有：伊洛瓦底海豚（Irrawaddy Dolphin）展示</li>
+          <li>冬季限定：水豚泡溫泉（ゆずカピバラ）超萌登場</li>
+          <li>海獺（アシカ）秀每日定時舉行</li>
+          <li>觸摸池可近距離接觸海洋生物</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>09:00–17:00</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>成人¥1,400</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留2小時</div>
+          <div class="att-ii"><i class="fas fa-walking"></i>渡輪口步行12分</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#4a6fa5,#6da0d0)">🛣️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>廣島縣→山口縣 山陽道上</div>
+        <div class="att-ttl">宮島 SA（下行線）</div>
+        <div class="att-sub">宮島サービスエリア ／ 瀨戶內海絕景休息站</div>
+        <div class="att-desc">山陽道上最著名的休息站之一，位於廿日市IC和大竹IC之間。從休息站戶外展望台可遠眺宮島島影和瀨戶內海的多島嶼風景，天氣晴朗時甚至能隱約看見嚴島神社的鳥居。販售的商品以廣島限定為主：紅葉饅頭、牡蠣製品、廣島菜漬（浅漬け）、瀨戶內檸檬系列等，是自駕前往下關的完美途中休息站。美食廣場提供廣島燒、牡蠣飯等廣島特色餐點，環境寬敞舒適。</div>
+        <ul class="att-feats">
+          <li>展望台可眺望宮島島影與瀨戶內海多島海</li>
+          <li>廣島限定商品最齊全的SA，紅葉饅頭種類繁多</li>
+          <li>提供廣島燒、牡蠣飯等在地美食</li>
+          <li>僅限行駛山陽道的自駕車輛進入</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>24小時（餐廳有固定時間）</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>停車免費</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留20–30分</div>
+          <div class="att-ii"><i class="fas fa-car"></i>自駕專屬</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Tsunoshima_ohashi01.jpg/1280px-Tsunoshima_ohashi01.jpg" alt="角島大橋" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#006994,#00b4d8)">🌊</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>山口縣 下關市 豊北町</div>
+        <div class="att-ttl">角島大橋</div>
+        <div class="att-sub">つのしま大橋 ／ 日本最美大橋</div>
+        <div class="att-desc">全長1,780公尺，連接本州與角島（つのしま），橋面距海面僅數公尺，行駛其上如同在翡翠藍海面滑翔。由於此處海水特別清澈，被CNN Travel評選為「日本最美景點之一」，也是日本廣告和MV的熱門拍攝地。12月冬日晴天時，低角度陽光將海水映成深邃的藍綠色，遊客稀少，是攝影的絕佳時機。大橋通行完全免費，是日本罕見不收費的跨海大橋。渡過大橋後，角島頂端有建於1876年的角島燈台（明治時代洋式燈台），攀登後可360°俯瞰日本海。</div>
+        <ul class="att-feats">
+          <li>CNN評選「日本最美大橋」，翡翠色日本海絕景</li>
+          <li>大橋免通行費，全程1.78km橋面行駛體驗</li>
+          <li>角島燈台（1876年建）登頂俯瞰日本海全景</li>
+          <li>12月遊客少，是最適合攝影的季節</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>全天開放</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>免費（燈台¥200）</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留1–1.5小時</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>道の駅 豊北 免費</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Motonosumi-inari_shrine%2C_Yamaguchi%2C_Japan.jpg/1280px-Motonosumi-inari_shrine%2C_Yamaguchi%2C_Japan.jpg" alt="元乃隅神社" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#8B0000,#FF6B35)">⛩️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>山口縣 長門市 油谷津黃</div>
+        <div class="att-ttl">元乃隅神社</div>
+        <div class="att-sub">もとのすみ神社 ／ 123座鳥居崖邊奇觀</div>
+        <div class="att-desc">123座朱紅色鳥居沿懸崖蜿蜒綿延約100公尺，守護著日本海壯闊的海天一色。2015年被美國CNN評為「日本最值得造訪的31個地點之一」，從此吸引全球目光。神社建於1955年，供奉宇迦之御魂神（商業・農業・漁業之神），起源是一位漁夫在夢中受白狐指引建立。最有趣的設計是：鳥居群最頂端有一個高達6公尺的大鳥居，頂部設有「賽錢箱」，必須從下方投幣投入高處的箱子中，傳說投入成功即可心想事成！成功率不高，更添挑戰樂趣。步道從神社延伸至懸崖邊，俯瞰日本海的景色令人震撼。</div>
+        <ul class="att-feats">
+          <li>123座連續鳥居沿崖而建，CNN評為日本最美景點之一</li>
+          <li>6公尺高鳥居頂端的賽錢箱，投入硬幣願望成真傳說</li>
+          <li>懸崖眺望台俯瞰日本海，與鳥居形成絕美構圖</li>
+          <li>12月遊客極少，獨享神社安靜氛圍</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>全天開放</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>免費參拜</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留1小時</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>專用停車場 免費50台</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#1a1a1a,#4a4a6a)">🐡</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>山口縣 下關市 あるかぽーと</div>
+        <div class="att-ttl">海響館</div>
+        <div class="att-sub">しものせき水族館 海響館 ／ 世界最大河豚館</div>
+        <div class="att-desc">下關市立水族館「海響館」以河豚（ふぐ）展覽聞名，收藏超過100種以上的河豚魚種，是世界上展示河豚種類最多的水族館。下關自古是「河豚之城」，因此這裡的河豚展示特別詳盡，從劇毒種類的介紹到無毒品種的觸摸體驗一應俱全。此外還有關門海峽特有魚種、企鵝館（黑腳企鵝和帝企鵝）、海豚表演秀，以及西日本最大規模的觸摸水池。館外就是關門海峽，展望台上可欣賞船隻往來和關門大橋全景。下關的漁業文化在此館得到完整呈現。</div>
+        <ul class="att-feats">
+          <li>世界最大河豚（ふぐ）展覽，100種以上珍稀河豚</li>
+          <li>企鵝館可近距離觀察黑腳企鵝日常</li>
+          <li>海豚・海豹表演秀每日定時，充滿歡笑</li>
+          <li>大型觸摸水池，可親手觸摸海洋生物</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>09:30–17:30</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>成人¥2,090</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留2小時</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>館內停車場¥300/時</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mojiko-Station-2013.jpg/1280px-Mojiko-Station-2013.jpg" alt="門司港駅" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#5D4037,#A1887F)">🏛️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>福岡縣 北九州市 門司区</div>
+        <div class="att-ttl">門司港レトロ地区</div>
+        <div class="att-sub">もじこうレトロ ／ 明治・大正時代的國際貿易港</div>
+        <div class="att-desc">明治時代門司港曾是日本最重要的國際貿易港口之一，香蕉、棉花從此進口，煤炭與工業品從此出口。現今這片保存完好的紅磚建築街區被稱為「門司港レトロ地区」，充滿異國情調。重要文化財「門司港駅」（1914年建造，新羅曼斯克樣式）是日本現存最古老的鐵路站，2019年完成全面修復工程。街區內還有舊門司税関（海關大樓）、舊大阪商船ビル（橙色磚塔）等歷史建築，以及九州鐵道紀念館。這裡的名物「焼きカレー」（烤咖哩飯）全日本獨一無二。</div>
+        <ul class="att-feats">
+          <li>重要文化財「門司港駅」（1914年建）是日本最古老車站</li>
+          <li>名物「焼きカレー」：咖哩飯焗烤後加起司半熟蛋，全國獨有</li>
+          <li>明治・大正時代紅磚建築群，Instagram打卡勝地</li>
+          <li>海峽プラザ購物中心，香蕉可樂餅・香蕉冰淇淋必買</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>全天（各設施不同）</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>散步免費</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留2–3小時</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>レトロ駐車場¥250/30分</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#1565C0,#42A5F5)">🚇</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>山口縣↔福岡縣 關門海峽海底</div>
+        <div class="att-ttl">關門海底人行隧道</div>
+        <div class="att-sub">関門トンネル人道 ／ 步行穿越本州與九州</div>
+        <div class="att-desc">全長約780公尺，是日本唯一可以步行穿越的海底隧道，連接本州（山口縣下關市）與九州（福岡縣北九州市門司区）。建於1942年，深度約海面下58公尺。人行道與車道分開，步行者完全免費通行，單趟約15–20分鐘。隧道中央有一條黃色線，標示「山口縣・福岡縣」的縣界，可以在此拍攝雙腳踏兩縣的紀念照片！隧道內溫度全年約18°C，12月冬天走進去反而暖和，可帶稍薄外套。整個體驗獨特有趣，是只有到下關才能做到的難忘回憶。</div>
+        <ul class="att-feats">
+          <li>日本唯一步行可穿越的海底隧道，完全免費</li>
+          <li>隧道中央縣界標示，「一腳踩兩縣」的趣味體驗</li>
+          <li>全年約18°C，冬天走進去反而舒適溫暖</li>
+          <li>步行單趟約15分鐘，可搭配關門渡輪形成循環路線</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>06:00–22:00</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>步行免費</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留30–40分</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>みもすそ川公園 免費</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Akama_Jingu_2008.jpg/1280px-Akama_Jingu_2008.jpg" alt="赤間神宮" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#C41230,#FF8C00)">⛩️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>山口縣 下關市 阿弥陀寺町</div>
+        <div class="att-ttl">赤間神宮</div>
+        <div class="att-sub">あかまじんぐう ／ 供奉幼帝的悲劇神社</div>
+        <div class="att-desc">供奉在壇之浦之戰（1185年）中年僅8歲薨逝的安德天皇，位於關門海峽岸邊，被稱為「水天宮」。面朝海峽的「水天門」是鮮豔的朱紅色唐破風建築，氣勢恢宏，倒映在水面上極為壯麗。境內有七盛塚，供奉在壇之浦戰役中殉身的平家一族武將。日本文豪小泉八雲（Lafcadio Hearn）在其著作《怪談》中記述的「耳無芳一」故事，就發生於此地，芳一為盲目琵琶樂師，在此地演奏平家物語，被亡靈纏身的著名傳說。境內設有芳一堂，可感受那段神秘歷史。</div>
+        <ul class="att-feats">
+          <li>供奉8歲夭折的安德天皇，充滿悲劇歷史色彩</li>
+          <li>朱紅色水天門建築精美，面朝關門海峽</li>
+          <li>《怪談》耳無芳一傳說發源地，境內有芳一堂</li>
+          <li>七盛塚：平家一族武將的長眠之地</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>09:00–17:00</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>免費參拜</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留40–60分</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>神社専用停車場 免費</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#3D5A3E,#7A9E7E)">⚔️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>山口縣 下關市 みもすそ川</div>
+        <div class="att-ttl">壇之浦古戦場跡</div>
+        <div class="att-sub">だんのうらこせんじょうあと ／ 源平決戰遺址</div>
+        <div class="att-desc">1185年3月24日，源氏與平家在此進行最後決戰，史稱「壇之浦之戰」，奠定了日本中世武士社會的根基。潮流複雜的關門海峽成為平家最後的戰場，安德天皇在此投海，平家一族就此滅亡，結束了日本平安時代。今日遺址設有源義經（騎馬）和平知盛（持錨）的對峙英雄像，氣勢磅礴。傳說戰死的平家武士化身為螃蟹，因此關門海峽的「平家蟹」（Heikegani）背甲花紋狀似人臉，被認為是武士怨靈化身。可搭配赤間神宮步行遊覽，感受完整的平家物語歷史脈絡。</div>
+        <ul class="att-feats">
+          <li>1185年源平最終決戰遺址，日本歷史轉捩點</li>
+          <li>源義經 VS 平知盛英雄銅像，震撼人心</li>
+          <li>平家蟹（Heikegani）：背甲似武士面孔的傳說螃蟹</li>
+          <li>關門大橋腳下，眺望洶湧海峽別有感觸</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>全天開放（戶外）</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>免費</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留30分</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>みもすそ川公園 免費</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#0d4f8b,#89c4e1)">🌅</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>島根縣 出雲市 大社町</div>
+        <div class="att-ttl">稻佐之濱</div>
+        <div class="att-sub">稲佐の浜 ／ 日本神話最神聖的海岸</div>
+        <div class="att-desc">在日本神話中，稻佐之濱是「國譲り神話」（大國主命將日本國土讓渡給天照大神）的重要場景，也是每年農曆10月（神在月/神無月），全日本八百萬神靈從海上登陸、齊聚出雲大社的神聖地點。海面上矗立著一座小岩島「弁天島」，供奉豐玉比古命，島身朱紅色小祠堂在波浪中格外醒目。按照出雲大社的傳統習俗，參拜者應在此取走一把海沙，帶至出雲大社「素鵞社」奉納，再換取素鵞社的神聖砂子帶回，可保佑家宅平安。12月清晨日出時分，天邊橙紅光芒與海浪聲交融，感受超凡出塵的神話氛圍。</div>
+        <ul class="att-feats">
+          <li>日本神話中八百萬神靈登陸的神聖海岸</li>
+          <li>「國譲り神話」的重要場景，比出雲大社歷史更古老</li>
+          <li>取稻佐之濱的沙，換素鵞社神砂的神聖儀式</li>
+          <li>12月清晨日出時最神秘壯觀，建議早起前往</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>全天開放</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>免費</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留30–45分</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>稲佐の浜駐車場 免費</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Izumo-taisha01.jpg/1280px-Izumo-taisha01.jpg" alt="出雲大社" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#4a1942,#8B4513)">⛩️</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>島根縣 出雲市 大社町杵築東</div>
+        <div class="att-ttl">出雲大社</div>
+        <div class="att-sub">いづもおおやしろ ／ 日本最古老的神社</div>
+        <div class="att-desc">日本最古老且最重要的神社之一，正式名稱「出雲大社」，供奉大国主命（大地之神、結緣之神、農業之神）。日本全國每年10月被稱為「神無月」（沒有神的月份），但出雲地方稱此月為「神在月」，因為全日本的神靈此時齊聚出雲大社，商討世間所有人的良緣。參拜方式獨特：出雲大社是日本唯一「二禮四拍手一禮」的神社，而非全國通用的「二拍手」。神楽殿前懸掛重達13噸、長約13.5公尺的超大注連繩（しめなわ）震撼人心。後方的「素鵞社」是接受稻佐之濱沙子奉納、換取神砂的聖地。</div>
+        <ul class="att-feats">
+          <li>日本唯一「二禮四拍手一禮」的特殊參拜儀式</li>
+          <li>神楽殿 13噸超大注連繩，日本最大級</li>
+          <li>素鵞社：奉納稻佐之濱沙、換取神聖守護砂的儀式</li>
+          <li>出雲大社以「結緣」聞名，求姻緣效果最靈驗</li>
+          <li>毗鄰神門通り商店街，出雲そば・ぜんざい必吃</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>06:00–20:00</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>免費（寶物館¥300）</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留2–3小時</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>大社駐車場 免費 大容量</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="att-card">
+      <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Matsue_Castle_2010.jpg/1280px-Matsue_Castle_2010.jpg" alt="松江城" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#2d3436,#636e72)">🏯</div>
+      </div>
+      <div class="att-body">
+        <div class="att-loc"><i class="fas fa-map-marker-alt"></i>島根縣 松江市 殿町</div>
+        <div class="att-ttl">松江城</div>
+        <div class="att-sub">まつえじょう / 千鳥城 ／ 日本100名城・国宝天守</div>
+        <div class="att-desc">日本現存12座完整天守閣中，最後一座（2015年）被日本政府認定為「国宝」的城堡。建於1611年，由堀尾忠晴費時5年建造完成，五層六重的黒漆天守因屋頂形如千鳥展翅，雅稱「千鳥城」。與其他著名城堡不同，松江城天守保存了最多原始構造，連內部的武器收藏架、秘密逃脫夾層都完整留存。登至最高層，可360°眺望松江市全景、宍道湖及遠山，12月若逢降雪，白雪覆頂的千鳥城美得如同水墨畫。護城河環繞四周，乘坐堀川遊覧船可欣賞城堡全貌，冬日船上備有炬燵（暖桌），溫暖而浪漫。</div>
+        <ul class="att-feats">
+          <li>日本100名城・2015年認定「国宝」，最後認定的天守</li>
+          <li>五層黑色天守「千鳥城」，原始木造結構完整保存</li>
+          <li>最高層360°展望：宍道湖・松江市全景</li>
+          <li>冬季堀川遊覧船備有炬燵（暖桌），穿越14座低橋</li>
+          <li>周邊塩見縄手武家屋敷街，小泉八雲記念館在旁</li>
+        </ul>
+        <div class="att-info">
+          <div class="att-ii"><i class="fas fa-clock"></i>08:30–18:30（冬季至17:00）</div>
+          <div class="att-ii"><i class="fas fa-yen-sign"></i>成人¥680</div>
+          <div class="att-ii"><i class="fas fa-hourglass-half"></i>建議停留2–3小時</div>
+          <div class="att-ii"><i class="fas fa-parking"></i>城山公園駐車場¥200/30分</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- HOTELS -->
+<div class="sec-alt">
+<section id="hotels">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-bed ico"></i>住宿推薦</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">精選4間飯店，全程僅換宿3次，預算每晚約 ¥14,000–20,000（≈TWD 3,100–4,400）</p>
+  <div class="htl-grid">
+
+    <div class="htl-card">
+      <div class="htl-hdr">
+        <div class="htl-stay">🏙️ 廣島 第一段 Night 1–2（12/18–20）</div>
+        <div class="htl-name">ANA Crowne Plaza Hotel Hiroshima</div>
+        <div class="htl-ja">ANAクラウンプラザホテル広島</div>
+      </div>
+      <div class="htl-body">
+        <div class="htl-price">
+          <span class="htl-jpy">¥18,000–22,000</span>
+          <span class="htl-twd">≈ TWD 3,960–4,840 /晚</span>
+        </div>
+        <ul class="htl-feats">
+          <li><i class="fas fa-map-marker-alt"></i>廣島市中心，步行10分和平記念公園</li>
+          <li><i class="fas fa-parking"></i>飯店停車場 ¥1,500/晚（需預約）</li>
+          <li><i class="fas fa-utensils"></i>多間餐廳（日式・西式・中式）</li>
+          <li><i class="fas fa-bath"></i>大浴場・健身設施</li>
+          <li><i class="fas fa-wifi"></i>免費Wi-Fi 全館</li>
+          <li><i class="fas fa-star"></i>推薦原因：位置絕佳，服務優質，宮島Day Trip最方便</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="htl-card">
+      <div class="htl-hdr">
+        <div class="htl-stay">🌊 下關 Night 3–4（12/20–22）</div>
+        <div class="htl-name">Kaikyo View Shimonoseki</div>
+        <div class="htl-ja">海峡ビューしものせき（旧シーモール下関）</div>
+      </div>
+      <div class="htl-body">
+        <div class="htl-price">
+          <span class="htl-jpy">¥14,000–18,000</span>
+          <span class="htl-twd">≈ TWD 3,080–3,960 /晚</span>
+        </div>
+        <ul class="htl-feats">
+          <li><i class="fas fa-map-marker-alt"></i>下關市中心，步行可達唐戸市場・赤間神宮</li>
+          <li><i class="fas fa-parking"></i>近隣コインパーキング ¥500–800/晚</li>
+          <li><i class="fas fa-binoculars"></i>部分房型可眺望關門海峽景色</li>
+          <li><i class="fas fa-fish"></i>附近河豚料理餐廳雲集</li>
+          <li><i class="fas fa-star"></i>推薦原因：絕佳地理位置，唐戸市場朝市步行即達</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="htl-card">
+      <div class="htl-hdr">
+        <div class="htl-stay">🏯 松江 Night 5–7（12/22–25）</div>
+        <div class="htl-name">Matsue Excel Hotel Tokyu</div>
+        <div class="htl-ja">松江エクセルホテル東急</div>
+      </div>
+      <div class="htl-body">
+        <div class="htl-price">
+          <span class="htl-jpy">¥13,000–16,000</span>
+          <span class="htl-twd">≈ TWD 2,860–3,520 /晚</span>
+        </div>
+        <ul class="htl-feats">
+          <li><i class="fas fa-map-marker-alt"></i>松江市中心，步行10分松江城</li>
+          <li><i class="fas fa-parking"></i>提携駐車場 ¥600–800/晚（步行5分）</li>
+          <li><i class="fas fa-utensils"></i>早餐豐盛，島根食材特色料理</li>
+          <li><i class="fas fa-train"></i>鄰近松江站，出雲・境港一日遊方便</li>
+          <li><i class="fas fa-star"></i>推薦原因：CP值高，中心位置，出雲大社・松江城雙向便利</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="htl-card">
+      <div class="htl-hdr">
+        <div class="htl-stay">🏙️ 廣島 第二段 Night 8–10（12/25–28）</div>
+        <div class="htl-name">ANA Crowne Plaza Hotel Hiroshima</div>
+        <div class="htl-ja">ANAクラウンプラザホテル広島（回到同一家）</div>
+      </div>
+      <div class="htl-body">
+        <div class="htl-price">
+          <span class="htl-jpy">¥18,000–22,000</span>
+          <span class="htl-twd">≈ TWD 3,960–4,840 /晚</span>
+        </div>
+        <ul class="htl-feats">
+          <li><i class="fas fa-map-marker-alt"></i>回到熟悉的廣島據點，購物・觀光最方便</li>
+          <li><i class="fas fa-parking"></i>飯店停車場 ¥1,500/晚</li>
+          <li><i class="fas fa-shopping-bag"></i>步行可達本通商店街・アニメイト廣島</li>
+          <li><i class="fas fa-plane"></i>廣島站・廣島空港交通便利</li>
+          <li><i class="fas fa-star"></i>推薦：回熟悉的好飯店，省去適應新環境的時間</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+</div>
+
+<!-- RESTAURANTS -->
+<section id="restaurants">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-utensils ico"></i>美食指南</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">精選各城市代表美食，從廣島燒・河豚料理到出雲蕎麥，每一口都是旅行的精華</p>
+  <div class="rst-grid">
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#8B3A3A,#D4691E)">
+        <span class="rst-city-badge">廣島</span>
+        <span class="em">🥞</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">麗ちゃん（廣島お好み村）</div>
+        <div class="rst-type">廣島燒 / お好み焼き</div>
+        <div class="rst-desc">廣島お好み村5樓最人氣名店，主廚麗子阿姨在此掌鍋數十年。廣島燒與大阪燒最大不同：廣島燒食材分層堆疊，底層薄麵糊、再鋪大量高麗菜・豆芽・豬肉，最上層鋪炒麵（中華そば），口感豐富紮實。冬日鐵板前站著等位，熱氣蒸騰相當暖心。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">廣島燒（肉・玉）基本款</span><span class="d-pr">¥1,200</span></li>
+          <li><span class="d-nm">スペシャル（肉・海老・イカ）</span><span class="d-pr">¥1,500</span></li>
+          <li><span class="d-nm">牡蠣入り廣島燒（冬季限定）</span><span class="d-pr">¥1,700</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#1a5276,#2e86ab)">
+        <span class="rst-city-badge">宮島</span>
+        <span class="em">🦪</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">牡蠣屋（かきや）</div>
+        <div class="rst-type">牡蠣料理 / 廣島縣産カキ専門</div>
+        <div class="rst-desc">宮島表参道商店街旁的牡蠣名店，廣島縣是日本最大的牡蠣產地（佔全國生產量約6成），冬季12月是牡蠣最肥美鮮甜的旺季。焼き牡蠣現點現烤，外殼鮮嫩汁多；牡蠣飯以牡蠣高湯炊煮，入口滿是海洋鮮味。排隊是常態，建議提早到或避開正午。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">焼き牡蠣（3個）</span><span class="d-pr">¥900</span></li>
+          <li><span class="d-nm">カキフライ定食</span><span class="d-pr">¥1,650</span></li>
+          <li><span class="d-nm">牡蠣飯</span><span class="d-pr">¥1,200</span></li>
+          <li><span class="d-nm">牡蠣鍋（冬季限定）</span><span class="d-pr">¥2,200</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#154360,#1f618d)">
+        <span class="rst-city-badge">下關</span>
+        <span class="em">🐡</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">春帆楼（しゅんぱんろう）</div>
+        <div class="rst-type">河豚懷石料理 / 明治創業老店</div>
+        <div class="rst-desc">創業於1888年（明治21年），也是1895年《下關條約》（馬關條約）簽訂的歷史性場所，是日本最著名的河豚料理餐廳之一。下關是河豚（ふぐ）的日本最大集散地，春帆楼在此傳承百年烹飪技藝。虎河豚刺身（てっさ）薄如紙張，透明晶瑩；河豚火鍋（てっちり）高湯清甜，是冬日最奢華的享受。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">てっさ（虎河豚刺身）</span><span class="d-pr">¥3,500~</span></li>
+          <li><span class="d-nm">ふぐコース（全套懷石）</span><span class="d-pr">¥12,000~</span></li>
+          <li><span class="d-nm">ふぐ唐揚げ（炸河豚）</span><span class="d-pr">¥1,800</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#784212,#d68910)">
+        <span class="rst-city-badge">下關</span>
+        <span class="em">🐟</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">唐戸市場（からとシーモール）</div>
+        <div class="rst-type">鮮魚市場 / 週末朝市</div>
+        <div class="rst-desc">週六日限定「活きいき馬関街」朝市，市場外廣場擺滿新鮮海產攤，下關漁師直賣，價格實惠。市場朝市是在地人週末的重要日常，廣場熱鬧非凡。必試：活の河豚壽司（¥300–500）、生海膽軍艦、新鮮烤扇貝。不用訂位，邊逛邊買，海景邊享用，是下關最在地的體驗方式。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">ふぐ握り寿司（3貫）</span><span class="d-pr">¥500</span></li>
+          <li><span class="d-nm">ウニ軍艦</span><span class="d-pr">¥400</span></li>
+          <li><span class="d-nm">生牡蠣1個</span><span class="d-pr">¥200</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#7b4f12,#c97d2f)">
+        <span class="rst-city-badge">門司港</span>
+        <span class="em">🍛</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">焼きカレー 伽哩本舗</div>
+        <div class="rst-type">焼きカレー / 門司港名物</div>
+        <div class="rst-desc">門司港發源的獨特料理「焼きカレー」（烤咖哩）：將咖哩飯盛入烤皿，鋪上起司和半熟蛋後放入烤箱焗烤，表面金黃焦香，內裡咖哩濃稠鮮美。這道料理在1960年代由門司港的喫茶店發明，現在已成為門司港的代名詞，多家店各有特色。「伽哩本舗」是歷史最悠久的名店，招牌煉瓦（紅磚）焼きカレー配色誘人。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">焼きカレー レギュラー</span><span class="d-pr">¥1,200</span></li>
+          <li><span class="d-nm">煉瓦焼きカレー（起司多）</span><span class="d-pr">¥1,500</span></li>
+          <li><span class="d-nm">シーフード焼きカレー</span><span class="d-pr">¥1,600</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#2d6a4f,#52b788)">
+        <span class="rst-city-badge">出雲</span>
+        <span class="em">🍜</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">荒木屋（あらきや）</div>
+        <div class="rst-type">出雲そば / 百年老店</div>
+        <div class="rst-desc">出雲市大社町的百年蕎麥麵老舖，出雲そば以蕎麥連殼一起磨製，麵條顏色較深，香氣更濃郁，口感有嚼勁。「割子そば（わりごそば）」是出雲蕎麥的正統吃法：將蕎麥麵分裝在三個圓漆碗（割子）中，依序將醬汁澆入，搭配山藥泥・生蛋・細蔥・海苔等配料，每碗口感略有不同，新鮮有趣。冬日暖暖的「釜揚げそば」也是不錯選擇。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">割子そば 三段</span><span class="d-pr">¥1,000</span></li>
+          <li><span class="d-nm">釜揚げそば（温）</span><span class="d-pr">¥900</span></li>
+          <li><span class="d-nm">出雲ぜんざい（甜品）</span><span class="d-pr">¥650</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#1a237e,#3949ab)">
+        <span class="rst-city-badge">松江</span>
+        <span class="em">🐟</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">居酒屋 寅丸（とらまる）</div>
+        <div class="rst-type">のどぐろ・島根海鮮 / 居酒屋</div>
+        <div class="rst-desc">松江是のどぐろ（喉黑魚，學名赤鯥）的著名產地，這種深海魚脂肪豐厚滑嫩，鹽燒後皮脆肉嫩、入口即化，被稱為「白身魚のトロ（白肉魚中的大肥鮪）」。寅丸使用島根縣近海捕獲的新鮮食材，搭配島根県産の地酒（島根的清酒種類繁多且品質優）。聖誕夜可以在此享用松江式特別コース，感受日本漁港城市的飲食文化。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">のどぐろ 塩焼き</span><span class="d-pr">¥2,500~</span></li>
+          <li><span class="d-nm">しじみ汁（宍道湖蜆湯）</span><span class="d-pr">¥500</span></li>
+          <li><span class="d-nm">島根地酒 飲み比べ</span><span class="d-pr">¥1,200</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rst-card">
+      <div class="rst-img" style="background:linear-gradient(135deg,#6d4c41,#a1887f)">
+        <span class="rst-city-badge">廣島</span>
+        <span class="em">🔥</span>
+      </div>
+      <div class="rst-body">
+        <div class="rst-name">焼肉 彩苑（さいえん）</div>
+        <div class="rst-type">廣島和牛 / 炭火燒肉</div>
+        <div class="rst-desc">廣島和牛（広島牛）是日本A4–A5等級和牛，脂花均勻細緻，以炭火燒烤最能帶出肉質甜度。彩苑使用廣島縣産黒毛和牛，搭配廣島地啤酒「SAKURA CRAFT」或廣島的地酒，為旅行最後劃下豐盛句號。用廣島牛為旅行收尾，是對這片土地最美好的致敬。</div>
+        <ul class="rst-dishes">
+          <li><span class="d-nm">廣島牛 カルビ</span><span class="d-pr">¥1,200/100g</span></li>
+          <li><span class="d-nm">廣島牛 ロース</span><span class="d-pr">¥1,500/100g</span></li>
+          <li><span class="d-nm">和牛コース（含飲料）</span><span class="d-pr">¥6,000~</span></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- CHARACTER / TOY SECTION -->
+<div class="char-sec">
+<section id="character">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-gamepad ico"></i>🌿 皮克敏 × 吉伊卡哇 玩具特區 🐾</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">西日本旅途中精選玩具・角色商品購入地點，讓旅行更加豐富有趣！</p>
+  <div class="char-grid">
+
+    <div class="char-panel pikmin">
+      <div class="char-hdr">
+        <span class="char-em">🌱</span>
+        <div><div class="char-nm">Pikmin 皮克敏</div><div style="font-size:.8rem;color:#4CAF50">Nintendo 官方周邊尋寶地圖</div></div>
+      </div>
+      <div class="char-intro">皮克敏系列在日本有大量官方周邊商品，包括玩偶、吊飾、文具、遊戲、生活雜貨等，以下是旅途中最值得前往的購買地點。</div>
+      <ul class="store-list">
+        <li class="store-item">
+          <div class="store-nm">🎮 ヨドバシカメラ マルチメディア広島</div>
+          <div class="store-dt">廣島站前，日 10:00–21:00。日本最大電器量販店之一，Nintendo Switch 遊戲・官方皮克敏玩偶・吊飾一應俱全。「おもちゃ」樓層有整面皮克敏商品牆。</div>
+          <div class="store-tip">💡 DAY 9 購物天首選！購買遊戲最划算</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">🎯 UFOキャッチャー（GAME PANIC / SEGA）</div>
+          <div class="store-dt">廣島市・下關・門司港 各地遊樂場均有。日本夾娃娃機（UFOキャッチャー）景品中常有皮克敏限定玩偶・抱枕，市場上難以購入的稀有款式在此可能出現！</div>
+          <div class="store-tip">💡 每次¥100–200，挑戰一下！可能有稀有款</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">🛒 ドン・キホーテ 廣島店</div>
+          <div class="store-dt">廣島市中心，24小時營業。驚安の殿堂販售各種授權商品，皮克敏抱枕・文具・生活雜貨價格比官方便宜，建議多比較。</div>
+          <div class="store-tip">💡 年末清倉可能有特價商品！</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">🎪 Canal City Hakata（福岡博多）</div>
+          <div class="store-dt">門司港附近渡輪可達博多，大型購物中心內有「Nintendo LABO」商品區及多家角色商品店，皮克敏商品種類豐富。</div>
+          <div class="store-tip">💡 DAY 4 門司港後若時間充裕可前往（1小時交通）</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="char-panel chiikawa">
+      <div class="char-hdr">
+        <span class="char-em">🐾</span>
+        <div><div class="char-nm">Chiikawa 吉伊卡哇</div><div style="font-size:.8rem;color:#C2185B">ちいかわ・ハチワレ・うさぎ 周邊搜查</div></div>
+      </div>
+      <div class="char-intro">吉伊卡哇（ちいかわ）由作者ナガノ創作，超人氣三人組「ちいかわ・ハチワレ・うさぎ」的周邊商品遍及全日本，以下是旅途最佳入手地點。</div>
+      <ul class="store-list">
+        <li class="store-item">
+          <div class="store-nm">🎀 アニメイト広島（Animate廣島）</div>
+          <div class="store-dt">廣島市中心（本通附近），日 11:00–20:00。日本最大動漫周邊連鎖店，吉伊卡哇商品專區：壓克力立牌・玩偶・文具・貼紙・包包・手機殼。12月聖誕節有限定商品！</div>
+          <div class="store-tip">💡 DAY 9 必訪！最齊全的吉伊卡哇商品</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">📚 ヴィレッジヴァンガード（Village Vanguard）</div>
+          <div class="store-dt">廣島市內數家分店。充滿個性的雜貨書店，常有吉伊卡哇稀有周邊・聯名商品，不定期進貨，每次都有驚喜。</div>
+          <div class="store-tip">💡 稀有限定款在這裡比較容易找到</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">🎯 UFOキャッチャー 全線</div>
+          <div class="store-dt">廣島・下關・門司港・出雲 各地遊樂場。吉伊卡哇是日本夾娃娃機景品的超級熱門款，大型玩偶・掛件・毛毯等景品只能在此取得，售後價值高。</div>
+          <div class="store-tip">💡 旅途各地都能玩！每次¥100起挑戰稀有款</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">🏪 便利商店系列（コンビニ）</div>
+          <div class="store-dt">全家（FamilyMart）・7-Eleven・ローソン 全線。吉伊卡哇在日本便利商店定期推出獨家聯名商品：零食包裝・集點商品・馬克杯等，限期限量，需隨時留意。</div>
+          <div class="store-tip">💡 每天逛便利商店時順便掃一眼，驚喜隨時出現！</div>
+        </li>
+        <li class="store-item">
+          <div class="store-nm">🛍️ ロフト (LOFT) 廣島店</div>
+          <div class="store-dt">廣島市中心，常態銷售吉伊卡哇文具・日用品系列，包括筆記本・收納包・手帕等實用商品，質感好適合自用或送禮。</div>
+          <div class="store-tip">💡 質感好，送禮自用兩相宜</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="background:white;border-radius:var(--r);padding:1.5rem;margin-top:2rem;box-shadow:var(--shadow);border-left:5px solid var(--gold)">
+    <h3 style="font-family:var(--fs);color:var(--dark);margin-bottom:.8rem">🗓️ 購物行程建議</h3>
+    <p style="font-size:.88rem;color:#374151;line-height:1.8">
+      <strong>DAY 1（廣島抵達）</strong>：本通商店街逛逛，アニメイト廣島掃初次清單 ▸
+      <strong>DAY 4（門司港）</strong>：福岡遊樂場UFOキャッチャー挑戰 ▸
+      <strong>DAY 9（廣島購物天）</strong>：全力出擊！ヨドバシ→アニメイト→ドンキ→ヴィレッジヴァンガード→LOFT，一天掃完所有目標 ▸
+      <strong>DAY 10（最後採購）</strong>：廣島駅エキエ補買伴手禮，別忘了用日圓現金結帳享受免稅！（購物¥5,000以上出示護照可退消費稅）
+    </p>
+  </div>
+</div>
+</section>
+</div>
+
+<!-- TRANSPORT GUIDE -->
+<div class="sec-alt">
+<section id="transport">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-route ico"></i>交通指南</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">自駕路線完整攻略 vs 大眾運輸最佳方案，依您的行程彈性選擇</p>
+
+  <div class="tr-cmp">
+    <div class="tr-panel drive">
+      <h3><i class="fas fa-car"></i> 自駕方案 完整路線</h3>
+      <div class="rt-seg"><div class="rt-ft">📍 廣島 → 宮島口（Day 2）</div><div class="rt-det"><span>国道2号 or 山陽道</span><span>40分</span><span>高速¥370</span><span>宮島口停車¥700–1,000/日</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 廣島 → 宮島SA → 下關（Day 3）</div><div class="rt-det"><span>山陽道（下行）</span><span>2.5–3小時</span><span>高速¥3,380</span><span>SA停車免費</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 下關市內移動（Day 3–4）</div><div class="rt-det"><span>市內一般道</span><span>各景點10–20分</span><span>停車¥0–300/時</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 下關 → 角島大橋（Day 5）</div><div class="rt-det"><span>国道191号（海岸線）</span><span>60分</span><span>無高速費</span><span>停車免費</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 角島 → 元乃隅神社（Day 5）</div><div class="rt-det"><span>县道269号</span><span>30分</span><span>停車免費</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 元乃隅 → 松江（Day 5）</div><div class="rt-det"><span>山陰道方向</span><span>2.5–3小時</span><span>高速¥2,500</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 松江 → 出雲大社（Day 6）</div><div class="rt-det"><span>山陰道</span><span>40分</span><span>高速¥700</span><span>出雲大社停車免費</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">📍 松江 → 廣島（Day 8）</div><div class="rt-det"><span>中国道 or 山陰→山陽</span><span>3–3.5小時</span><span>高速¥3,200</span></div></div>
+      <p style="margin-top:1rem;font-size:.82rem;color:var(--gray)">🚗 <strong>租車建議：</strong>Toyota Rent a Car / Times Car Rental，10天緊湊型車約¥80,000–100,000（含保險）。辦理ETC卡（¥1,100/日租用或免費含在方案內），高速費可享30%折扣。</p>
+    </div>
+
+    <div class="tr-panel transit">
+      <h3><i class="fas fa-train"></i> 大眾運輸 主要路線</h3>
+      <div class="rt-seg"><div class="rt-ft">🚅 廣島 → 宮島口（Day 2）</div><div class="rt-det"><span>JR山陽本線</span><span>30分</span><span>¥410/人</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">⛴️ 宮島口 → 宮島島（Day 2）</div><div class="rt-det"><span>JR/松大フェリー</span><span>10分</span><span>¥200/人</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">🚅 廣島 → 下關（Day 3）</div><div class="rt-det"><span>新幹線→JR或高速バス</span><span>2–3.5小時</span><span>¥3,500–5,050/人</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">⛴️ 下關 → 門司港（Day 4）</div><div class="rt-det"><span>関門フェリー</span><span>5分</span><span>¥400/人</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">🚂 下關 → 松江（Day 5）</div><div class="rt-det"><span>JR山陰本線（乗り換え複数）</span><span>5–6小時</span><span>¥6,160/人</span><span>⚠️建議自駕</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">🚃 松江 → 出雲大社（Day 6）</div><div class="rt-det"><span>一畑電車</span><span>70分</span><span>¥820/人</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">🚅 松江 → 廣島（Day 8）</div><div class="rt-det"><span>特急やくも→新幹線</span><span>3.5小時</span><span>¥9,700/人</span></div></div>
+      <div class="rt-seg"><div class="rt-ft">🚋 廣島市内移動</div><div class="rt-det"><span>路面電車（市電）</span><span>各處¥200</span><span>一日券¥700</span></div></div>
+      <p style="margin-top:1rem;font-size:.82rem;color:var(--gray)">🎫 <strong>推薦IC Card：</strong>ICOCA（¥2,000購入含¥500押金），可搭廣島・関西・九州大部分交通工具，無需每次購票。部分新幹線需另購票。</p>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+<!-- BUDGET -->
+<section id="budget">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-calculator ico"></i>預算總覽</h2>
+  <div class="divider"></div>
+  <p class="sec-sub">以下為2人同行估算，分自駕與大眾運輸兩種方案（TWD匯率約1:4.5換算）</p>
+  <table class="bgt-tbl">
+    <thead><tr><th>項目</th><th>自駕方案（2人）</th><th>大眾運輸（2人）</th></tr></thead>
+    <tbody>
+      <tr><td>✈️ 機票（台灣↔廣島，來回）</td><td colspan="2" style="text-align:center">¥60,000–100,000（依購票時間，約TWD 13,000–22,000/人）</td></tr>
+      <tr class="sub"><td colspan="3">🏨 住宿費（10晚）</td></tr>
+      <tr><td>廣島 ANA Crowne Plaza × 5晚</td><td>¥100,000</td><td>¥100,000</td></tr>
+      <tr><td>下關 Kaikyo View × 2晚</td><td>¥32,000</td><td>¥32,000</td></tr>
+      <tr><td>松江 Excel Hotel Tokyu × 3晚</td><td>¥42,000</td><td>¥42,000</td></tr>
+      <tr class="sub"><td>住宿合計</td><td>¥174,000</td><td>¥174,000</td></tr>
+      <tr class="sub"><td colspan="3">🚗 交通費</td></tr>
+      <tr><td>租車費（10天，含保險）</td><td>¥90,000</td><td>—</td></tr>
+      <tr><td>高速公路費（ETC）</td><td>¥15,000</td><td>—</td></tr>
+      <tr><td>汽油費（約800km）</td><td>¥12,000</td><td>—</td></tr>
+      <tr><td>停車費（各景點）</td><td>¥8,000</td><td>—</td></tr>
+      <tr><td>新幹線・特急費</td><td>—</td><td>¥35,000</td></tr>
+      <tr><td>路面電車・巴士・渡輪</td><td>—</td><td>¥12,000</td></tr>
+      <tr class="sub"><td>交通合計</td><td>¥125,000</td><td>¥47,000</td></tr>
+      <tr class="sub"><td colspan="3">🍽️ 餐飲費（估計）</td></tr>
+      <tr><td>早餐（部分酒店附）</td><td>¥5,000</td><td>¥5,000</td></tr>
+      <tr><td>午餐平均¥1,500/人×11天</td><td>¥33,000</td><td>¥33,000</td></tr>
+      <tr><td>晚餐平均¥3,500/人×11天</td><td>¥77,000</td><td>¥77,000</td></tr>
+      <tr class="sub"><td>餐飲合計</td><td>¥115,000</td><td>¥115,000</td></tr>
+      <tr class="sub"><td colspan="3">🎫 景點門票</td></tr>
+      <tr><td>各景點門票合計（2人）</td><td>¥18,000</td><td>¥18,000</td></tr>
+      <tr class="sub"><td colspan="3">🛍️ 購物・紀念品</td></tr>
+      <tr><td>玩具・周邊商品（皮克敏・吉伊卡哇）</td><td>¥20,000</td><td>¥20,000</td></tr>
+      <tr><td>伴手禮・食品</td><td>¥15,000</td><td>¥15,000</td></tr>
+      <tr class="tot"><td>🇯🇵 在日總花費合計（2人）</td><td>¥467,000（≈TWD 103,000）</td><td>¥389,000（≈TWD 86,000）</td></tr>
+      <tr class="tot"><td>💰 每人預算（含機票）</td><td>≈ TWD 65,000–70,000/人</td><td>≈ TWD 55,000–60,000/人</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:1rem;font-size:.82rem;color:var(--gray)">⚠️ 以上為估算，實際費用依個人消費習慣、匯率波動及購票時機有所差異。建議多準備10–15%緩衝預算。免稅購物：在日本免稅商店消費¥5,000以上出示護照可退消費稅10%。</p>
+</div>
+</section>
+
+<!-- TIPS -->
+<div class="sec-alt">
+<section id="tips">
+<div class="sec">
+  <h2 class="sec-title"><i class="fas fa-lightbulb ico"></i>12月旅行實用貼士</h2>
+  <div class="divider"></div>
+  <div class="tip-grid">
+    <div class="tip-card"><div class="tip-ico">🌡️</div><div class="tip-ttl">氣候穿搭</div><div class="tip-txt">廣島12月白天5–12°C，早晚可能降至0–3°C。松江・出雲更冷，可能有降雪。建議洋蔥式穿搭：保暖內衣+毛衣+輕羽絨外套，準備手套和毛帽。堀川遊覧船有炬燵但戶外仍需保暖。</div></div>
+    <div class="tip-card"><div class="tip-ico">💳</div><div class="tip-ttl">付款・免稅</div><div class="tip-txt">日本現金使用仍普遍，建議台灣出發前換足¥100,000（可用信用卡在7-Eleven/郵局ATM補充）。購物¥5,000以上出示護照可享免稅（10%退稅），大型百貨公司和藥妝店普遍支援免稅。</div></div>
+    <div class="tip-card"><div class="tip-ico">📱</div><div class="tip-ttl">網路・導航</div><div class="tip-txt">建議購買「IIJmio」或「b-mobile」日本SIM卡，或租用WiFi蛋。自駕必備「Google Maps」（日本高速道路路況準確）或「道路交通情報」App。一畑電車等地方鐵路可查「Navitime」。</div></div>
+    <div class="tip-card"><div class="tip-ico">⛩️</div><div class="tip-ttl">神社禮儀</div><div class="tip-txt">出雲大社特別注意：參拜是「二禮四拍手一禮」，跟一般神社不同！進入神社前需在手水舍洗手（清淨）。12月氣溫低，神社清晨人少最適合拍照，帶稻佐之濱的沙子奉納素鵞社別忘記。</div></div>
+    <div class="tip-card"><div class="tip-ico">🎄</div><div class="tip-ttl">年末特別氛圍</div><div class="tip-txt">12月日本充滿クリスマス（聖誕）裝飾，各大城市點燈美麗。12月24日聖誕前夕餐廳常需提前訂位，建議抵達前2週預約春帆楼等高人氣餐廳。12月28日開始日本進入年末「年の瀬」，部分商店縮短營業。</div></div>
+    <div class="tip-card"><div class="tip-ico">🦪</div><div class="tip-ttl">廣島牡蠣季</div><div class="tip-txt">廣島縣是日本最大牡蠣產地，12月–2月是牡蠣最肥美鮮甜的旺季！宮島・廣島市內的牡蠣料理店不容錯過。想購買廣島牡蠣真空包裝帶回台灣，需注意海關規定（加工品可帶，生鮮不可）。</div></div>
+    <div class="tip-card"><div class="tip-ico">🐡</div><div class="tip-ttl">河豚安全資訊</div><div class="tip-txt">日本的河豚料理均由持有「ふぐ調理師免許」的專業廚師處理，安全有保障，不必擔心。下關的河豚刺身（てっさ）薄如紙張透明晶瑩，是視覺和味覺的雙重享受。春帆楼預約可透過官方網站進行。</div></div>
+    <div class="tip-card"><div class="tip-ico">🚗</div><div class="tip-ttl">自駕注意事項</div><div class="tip-txt">日本靠左行駛，方向盤在右側。國際駕照（IAA）需在台灣出發前辦理（監理站辦理，¥250）。宮島島上嚴禁車輛進入，需在宮島口停車後搭船。高速公路在乗口（上匝道）右側車道為超車道，請保持左車道行駛。</div></div>
+  </div>
+</div>
+</section>
+</div>
+
+<footer>
+  <div class="flogo">🏯 廣島・山口・島根 2026.12.18–28</div>
+  <p>11天10夜 西日本深度旅遊 ｜ 嚴島神社・出雲大社・松江城・角島大橋・元乃隅神社</p>
+  <p style="margin-top:.5rem">皮克敏 🌱 × 吉伊卡哇 🐾 × 河豚 🐡 × 牡蠣 🦪 × 廣島燒 🥞</p>
+  <p style="margin-top:1rem;font-size:.75rem">資訊更新時間：2026年　· 費用為估算，實際以現場為準　· 請事先確認各設施開放時間</p>
+</footer>
+
+<script>
+function toggleDay(id){
+  const el=document.getElementById(id);
+  el.classList.toggle('open');
+}
+function switchTab(day,mode){
+  const body=document.getElementById(day).querySelector('.day-body');
+  body.querySelectorAll('.tb-pane').forEach(p=>p.classList.remove('active'));
+  body.querySelectorAll('.tb-btn').forEach(b=>{b.classList.remove('a-drive','a-transit')});
+  document.getElementById(day+'-'+mode).classList.add('active');
+  const btn=body.querySelectorAll('.tb-btn')[mode==='drive'?0:1];
+  btn.classList.add(mode==='drive'?'a-drive':'a-transit');
+}
+// Intersection Observer for reveal animations
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('reveal');observer.unobserve(e.target);}});
+},{threshold:0.1});
+document.querySelectorAll('.ov-card,.day-card,.att-card,.htl-card,.rst-card,.tip-card').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
