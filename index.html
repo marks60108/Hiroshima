@@ -100,9 +100,9 @@ body{font-family:var(--fb);background:var(--cream);color:var(--dark);line-height
 .att-card{background:#fff;border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;transition:transform .3s,box-shadow .3s}
 .att-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-h)}
 .att-img-wrap{width:100%;height:210px;overflow:hidden;position:relative}
-.att-img-wrap img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.att-img-wrap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .5s}
 .att-card:hover .att-img-wrap img{transform:scale(1.05)}
-.att-img-ph{height:210px;display:flex;align-items:center;justify-content:center;font-size:5rem}
+.att-img-ph{height:210px;display:flex;align-items:center;justify-content:center;font-size:5rem;position:absolute;inset:0;z-index:0}
 .att-body{padding:1.4rem}
 .att-loc{font-size:.75rem;color:var(--gray);display:flex;align-items:center;gap:.3rem;margin-bottom:.4rem}
 .att-ttl{font-family:var(--fs);font-size:1.15rem;font-weight:700;color:var(--dark)}
@@ -736,8 +736,8 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Itsukushima_torii_angle.jpg/1280px-Itsukushima_torii_angle.jpg" alt="嚴島神社大鳥居" onerror="this.style.display='none'">
-        <div class="att-img-ph" style="background:linear-gradient(135deg,#8B0000,#C41230);display:none" id="ph1">⛩️</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Itsukushima_torii_angle.jpg/1280px-Itsukushima_torii_angle.jpg" alt="嚴島神社大鳥居" onerror="this.style.display='none'">
+        <div class="att-img-ph" style="background:linear-gradient(135deg,#8B0000,#C41230)" id="ph1">⛩️</div>
       </div>
       <div class="att-body">
         <div class="att-loc"><i class="fas fa-map-marker-alt"></i>廣島縣 廿日市市 宮島</div>
@@ -762,6 +762,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Miyajima_Aquarium.jpg" alt="宮島水族館" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#1A3A5C,#2E86AB)">🐟</div>
       </div>
       <div class="att-body">
@@ -786,6 +787,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Miyajima_SA_Seto_Inland_Sea.jpg" alt="宮島SA展望" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#4a6fa5,#6da0d0)">🛣️</div>
       </div>
       <div class="att-body">
@@ -810,7 +812,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Tsunoshima_ohashi01.jpg/1280px-Tsunoshima_ohashi01.jpg" alt="角島大橋" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Tsunoshima_ohashi01.jpg/1280px-Tsunoshima_ohashi01.jpg" alt="角島大橋" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#006994,#00b4d8)">🌊</div>
       </div>
       <div class="att-body">
@@ -835,7 +837,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Motonosumi-inari_shrine%2C_Yamaguchi%2C_Japan.jpg/1280px-Motonosumi-inari_shrine%2C_Yamaguchi%2C_Japan.jpg" alt="元乃隅神社" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Motonosumi-inari_shrine%2C_Yamaguchi%2C_Japan.jpg/1280px-Motonosumi-inari_shrine%2C_Yamaguchi%2C_Japan.jpg" alt="元乃隅神社" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#8B0000,#FF6B35)">⛩️</div>
       </div>
       <div class="att-body">
@@ -860,6 +862,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaikyokan_Aquarium_Shimonoseki.jpg" alt="海響館水族館" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#1a1a1a,#4a4a6a)">🐡</div>
       </div>
       <div class="att-body">
@@ -884,7 +887,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mojiko-Station-2013.jpg/1280px-Mojiko-Station-2013.jpg" alt="門司港駅" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mojiko-Station-2013.jpg/1280px-Mojiko-Station-2013.jpg" alt="門司港駅" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#5D4037,#A1887F)">🏛️</div>
       </div>
       <div class="att-body">
@@ -909,6 +912,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kanmon_Tunnel_Pedestrian.jpg" alt="關門海底人行隧道" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#1565C0,#42A5F5)">🚇</div>
       </div>
       <div class="att-body">
@@ -933,7 +937,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Akama_Jingu_2008.jpg/1280px-Akama_Jingu_2008.jpg" alt="赤間神宮" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Akama_Jingu_2008.jpg/1280px-Akama_Jingu_2008.jpg" alt="赤間神宮" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#C41230,#FF8C00)">⛩️</div>
       </div>
       <div class="att-body">
@@ -958,6 +962,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dannoura.jpg" alt="壇之浦古戰場" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#3D5A3E,#7A9E7E)">⚔️</div>
       </div>
       <div class="att-body">
@@ -982,6 +987,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Inasanohama_beach.jpg/1280px-Inasanohama_beach.jpg" alt="稻佐之濱" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#0d4f8b,#89c4e1)">🌅</div>
       </div>
       <div class="att-body">
@@ -1006,7 +1012,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Izumo-taisha01.jpg/1280px-Izumo-taisha01.jpg" alt="出雲大社" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Izumo-taisha01.jpg/1280px-Izumo-taisha01.jpg" alt="出雲大社" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#4a1942,#8B4513)">⛩️</div>
       </div>
       <div class="att-body">
@@ -1032,7 +1038,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="att-card">
       <div class="att-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Matsue_Castle_2010.jpg/1280px-Matsue_Castle_2010.jpg" alt="松江城" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Matsue_Castle_2010.jpg/1280px-Matsue_Castle_2010.jpg" alt="松江城" onerror="this.style.display='none'">
         <div class="att-img-ph" style="background:linear-gradient(135deg,#2d3436,#636e72)">🏯</div>
       </div>
       <div class="att-body">
@@ -1071,7 +1077,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="htl-card">
       <div style="height:160px;overflow:hidden;position:relative">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Hiroshima_Peace_Memorial_Museum_and_Cenotaph.jpg/1280px-Hiroshima_Peace_Memorial_Museum_and_Cenotaph.jpg" style="width:100%;height:100%;object-fit:cover" alt="廣島" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2E86AB)'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Hiroshima_Peace_Memorial_Museum_and_Cenotaph.jpg/1280px-Hiroshima_Peace_Memorial_Museum_and_Cenotaph.jpg" style="width:100%;height:100%;object-fit:cover" alt="廣島" onerror="this.parentElement.style.background='linear-gradient(135deg,#1A1A2E,#2E86AB)'">
         <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
           <span style="color:#fff;font-size:.85rem;font-weight:600">📍 廣島市中心 ｜ 步行10分和平紀念公園</span>
         </div>
@@ -1099,7 +1105,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="htl-card">
       <div style="height:160px;overflow:hidden;position:relative">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kanmonkyo_bridge.jpg/1280px-Kanmonkyo_bridge.jpg" style="width:100%;height:100%;object-fit:cover" alt="關門橋" onerror="this.parentElement.style.background='linear-gradient(135deg,#154360,#2E86AB)'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Kanmonkyo_bridge.jpg/1280px-Kanmonkyo_bridge.jpg" style="width:100%;height:100%;object-fit:cover" alt="關門橋" onerror="this.parentElement.style.background='linear-gradient(135deg,#154360,#2E86AB)'">
         <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
           <span style="color:#fff;font-size:.85rem;font-weight:600">📍 下關市中心 ｜ 關門海峽景觀</span>
         </div>
@@ -1126,7 +1132,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="htl-card">
       <div style="height:160px;overflow:hidden;position:relative">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Matsue_Castle_2010.jpg/1280px-Matsue_Castle_2010.jpg" style="width:100%;height:100%;object-fit:cover" alt="松江城" onerror="this.parentElement.style.background='linear-gradient(135deg,#2d3436,#636e72)'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Matsue_Castle_2010.jpg/1280px-Matsue_Castle_2010.jpg" style="width:100%;height:100%;object-fit:cover" alt="松江城" onerror="this.parentElement.style.background='linear-gradient(135deg,#2d3436,#636e72)'">
         <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
           <span style="color:#fff;font-size:.85rem;font-weight:600">📍 松江市中心 ｜ 步行10分松江城</span>
         </div>
@@ -1153,7 +1159,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
 
     <div class="htl-card">
       <div style="height:160px;overflow:hidden;position:relative">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hiroshima_castle_1.jpg/1280px-Hiroshima_castle_1.jpg" style="width:100%;height:100%;object-fit:cover" alt="廣島城" onerror="this.parentElement.style.background='linear-gradient(135deg,#8B0000,#C41230)'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Hiroshima_castle_1.jpg/1280px-Hiroshima_castle_1.jpg" style="width:100%;height:100%;object-fit:cover" alt="廣島城" onerror="this.parentElement.style.background='linear-gradient(135deg,#8B0000,#C41230)'">
         <div style="position:absolute;inset:0;background:rgba(0,0,0,.35);display:flex;align-items:flex-end;padding:.8rem 1rem">
           <span style="color:#fff;font-size:.85rem;font-weight:600">📍 廣島市中心 ｜ 購物・平和公園最方便</span>
         </div>
@@ -1194,7 +1200,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#8B3A3A,#D4691E)">
         <span class="rst-city-badge">廣島</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Hiroshima-style_okonomiyaki.jpg/640px-Hiroshima-style_okonomiyaki.jpg" alt="廣島燒" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Hiroshima-style_okonomiyaki.jpg/640px-Hiroshima-style_okonomiyaki.jpg" alt="廣島燒" onerror="this.style.display='none'">
         <span class="em" id="em-okono">🥞</span>
       </div>
       <div class="rst-body">
@@ -1212,7 +1218,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#1a5276,#2e86ab)">
         <span class="rst-city-badge">宮島</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Oyster_on_the_half_shell.jpg/640px-Oyster_on_the_half_shell.jpg" alt="牡蠣" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Oyster_on_the_half_shell.jpg/640px-Oyster_on_the_half_shell.jpg" alt="牡蠣" onerror="this.style.display='none'">
         <span class="em">🦪</span>
       </div>
       <div class="rst-body">
@@ -1231,7 +1237,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#154360,#1f618d)">
         <span class="rst-city-badge">下關</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fugu_sashimi.jpg/640px-Fugu_sashimi.jpg" alt="河豚刺身" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fugu_sashimi.jpg/640px-Fugu_sashimi.jpg" alt="河豚刺身" onerror="this.style.display='none'">
         <span class="em">🐡</span>
       </div>
       <div class="rst-body">
@@ -1249,7 +1255,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#784212,#d68910)">
         <span class="rst-city-badge">下關</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Karato_Ichiba_in_Shimonoseki.jpg/640px-Karato_Ichiba_in_Shimonoseki.jpg" alt="唐戸市場" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Karato_Ichiba_in_Shimonoseki.jpg/640px-Karato_Ichiba_in_Shimonoseki.jpg" alt="唐戸市場" onerror="this.style.display='none'">
         <span class="em">🐟</span>
       </div>
       <div class="rst-body">
@@ -1267,7 +1273,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#7b4f12,#c97d2f)">
         <span class="rst-city-badge">門司港</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mojiko-Station-2013.jpg/640px-Mojiko-Station-2013.jpg" alt="門司港" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mojiko-Station-2013.jpg/640px-Mojiko-Station-2013.jpg" alt="門司港" onerror="this.style.display='none'">
         <span class="em">🍛</span>
       </div>
       <div class="rst-body">
@@ -1285,7 +1291,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#2d6a4f,#52b788)">
         <span class="rst-city-badge">出雲</span>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Izumo_Soba.jpg/640px-Izumo_Soba.jpg" alt="出雲蕎麥麵" onerror="this.style.display='none'">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Izumo_Soba.jpg/640px-Izumo_Soba.jpg" alt="出雲蕎麥麵" onerror="this.style.display='none'">
         <span class="em">🍜</span>
       </div>
       <div class="rst-body">
@@ -1303,6 +1309,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#1a237e,#3949ab)">
         <span class="rst-city-badge">松江</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Grilled_fish_(Nodoguro).jpg/640px-Grilled_fish_(Nodoguro).jpg" alt="のどぐろ塩焼き" onerror="this.style.display='none'">
         <span class="em">🐟</span>
       </div>
       <div class="rst-body">
@@ -1320,6 +1327,7 @@ footer p{color:rgba(255,255,255,.55);font-size:.82rem}
     <div class="rst-card">
       <div class="rst-img" style="background:linear-gradient(135deg,#6d4c41,#a1887f)">
         <span class="rst-city-badge">廣島</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Japanese_wagyu_beef.jpg/640px-Japanese_wagyu_beef.jpg" alt="廣島和牛燒肉" onerror="this.style.display='none'">
         <span class="em">🔥</span>
       </div>
       <div class="rst-body">
